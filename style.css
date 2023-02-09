@@ -1,0 +1,17 @@
+body{
+    background-image: linear-gradient(200deg, rgb(8, 136, 240), rgb(20, 238, 191));;
+}
+h1,h2{
+    font-family: 'Roboto Serif', serif; ;
+    font-weight: bold;
+    color:darkblue;
+}
+
+p{
+    font-family: 'Roboto Condensed', sans-serif;;
+}
+
+ul{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: light;
+}
