@@ -1,28 +1,44 @@
-body{
-    background-image: linear-gradient(200deg, rgb(8, 136, 240), rgb(20, 238, 191));;
+body {
+    background-color: #f0f4f8; /* Soft blue-grey background for better readability */
 }
-h1,h2{
-    font-family: 'Roboto Serif', serif; ;
+
+h1, h2 {
+    font-family: 'Roboto Serif', serif;
     font-weight: bold;
-    color:darkblue;
+    color: #2c3e50; /* Dark slate blue color for headers */
 }
 
-p{
-    font-family: 'Roboto Condensed', sans-serif;;
-}
-
-ul{
+p {
     font-family: 'Roboto Condensed', sans-serif;
-    font-weight: light;
+    color: #34495e; /* Slightly dark grey-blue for better readability */
 }
+
+ul {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    color: #34495e; /* Same as paragraph color */
+}
+
 nav {
-    text-align: center; /* Center the text within the nav */
+    text-align: center;
+    background-color: #2980b9; /* Medium blue color for the navigation bar */
+    padding: 10px 0; /* Add padding to the navigation bar */
 }
 
 nav a {
-    display: inline-block; /* Make each link a block element */
-    margin: 0 10px; /* Add some spacing between links if needed */
+    display: inline-block;
+    margin: 0 10px;
     text-decoration: none;
     color: white;
     font-weight: bold;
+}
+
+img {
+    width: 1250px; /* Set the width of the image */
+    height: 150px; /* Set the height of the image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    box-shadow: 10px 10px;
 }
