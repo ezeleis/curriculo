@@ -7,20 +7,29 @@ facundoezequieleis@gmail.com | [LinkedIn](https://www.linkedin.com/in/facundo-ez
 
 ## Summary
 
-Full Stack Web Developer with a formal certification in Information Technology and 2+ years of hands-on development experience building end-to-end web applications. Proficient in TypeScript, Python, and SQL, with practical exposure to AI/automation integrations using the Anthropic Claude API. Background in technical support and CRM automation provides a strong foundation for understanding system architecture, data flow, and real-world user requirements. Trilingual (English, Spanish, Portuguese) with experience working across US, Latin American, and Brazilian markets.
+Full Stack Web Developer with a formal **technical** certification in Information Technology from SENAI/SC and 2+ years of hands-on development experience building end-to-end web applications. Strong in TypeScript, JavaScript, Python (including data-oriented work), SQL, and **Java with the Spring Framework** and related libraries. Comfortable across modern frontend stacks (**vanilla JS**, Angular, React, **React Native**, **Vite**-based workflows), backend APIs, and CRM-driven automation. Currently **implementing a RAG (retrieval-augmented generation) system**; practical experience with **LLM integrations, agent-style workflows, and automation platforms** (Claude, Mistral, Cursor, Lovable, vibe-coding tools, Make, MindStudio, n8n). Foundational exposure to **machine learning** concepts alongside deep day-to-day use of AI-assisted and no/low-code delivery. Background in technical support and CRM automation supports system architecture, data flow, and real-world requirements. **English near-native**; Spanish (native); Portuguese (fluent); experience across US, Latin American, and Brazilian markets.
 
 ---
 
 ## Technical Skills
 
-**Languages:** TypeScript, JavaScript, Python, SQL
-**Frontend:** HTML5, CSS3, React (exposure)
-**Backend:** Node.js, REST APIs
+**Languages:** TypeScript, JavaScript, Python (including data-focused scripting and analysis), SQL, Java (Spring Framework and ecosystem libraries)
+
+**Frontend & mobile:** HTML5, CSS3, vanilla JavaScript, Angular, React, React Native; Vite-based build and dev workflows
+
+**Backend & APIs:** Node.js, REST APIs, Java / Spring
+
 **Databases:** SQL (relational), CRM systems
-**AI / Automation:** Anthropic Claude API, workflow automation pipelines
+
+**AI, ML & automation:** RAG implementation (current); introductory **machine learning** knowledge; extensive **automation and AI tooling** — vibe coding and AI-first IDEs (Cursor, Lovable, and similar), **AI agents**, Anthropic **Claude**, **Mistral** and other LLMs, workflow automation (**Make**, **MindStudio**, **n8n**), and custom automation pipelines
+
+**Low-code, CMS & integrations:** WordPress; no-code / low-code tools and third-party integrations; rapid product delivery with AI-assisted and vibe-coding workflows
+
 **Blockchain:** Smart contracts (advanced certification)
-**Tools & Platforms:** Git, CRM platforms, SERP/SEO analysis tools, MS Excel (advanced)
-**Languages (spoken):** English (C1 — Cambridge First Certificate), Spanish (native), Portuguese (fluent)
+
+**Tools & platforms:** Git, CRM platforms, SERP/SEO analysis tools, MS Excel (advanced)
+
+**Languages (spoken):** English (**near-native**; **ECCE — CaMLA, Grade A**), Spanish (native), Portuguese (fluent)
 
 ---
 
@@ -83,20 +92,22 @@ Full Stack Web Developer with a formal certification in Information Technology a
 
 ## Education
 
-**Fullstack Developer — Information Technology**
+**Fullstack Developer — Information Technology** (formal technical program)  
 SENAI/SC – Serviço Nacional de Aprendizagem Industrial | Jan 2023 – Dec 2023
 
 ---
 
 ## Certifications
 
-| Certification             | Issuer / Platform        |
-|---------------------------|--------------------------|
-| First Certificate in English (C1) | Cambridge Assessment |
-| Fullstack Developer       | SENAI/SC                 |
-| Blockchain Advanced       | (Platform)               |
-| Learn SQL                 | (Platform)               |
-| Python                    | (Platform)               |
+| Certification | Issuer / notes |
+|---------------|----------------|
+| Fullstack Developer — Information Technology | SENAI/SC — **formal technical certification** |
+| ECCE (Certificate of Competency in English), **Grade A** | CaMLA |
+| Blockchain Advanced | Online learning platform |
+| Learn SQL | Online learning platform |
+| Python | Online learning platform |
+
+*(Additional vendor and platform credentials from online learning providers as listed above.)*
 
 ---
 
