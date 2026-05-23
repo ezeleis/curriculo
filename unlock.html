@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Private access — Facundo Leis Pou</title>
+    <style>
+      :root {
+        --ink: #0f1419;
+        --muted: #5c6b7a;
+        --accent: #1a5f7a;
+        --border: #d8e0e6;
+        --paper: #fff;
+        --bg: #f3f6f8;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "Segoe UI", system-ui, sans-serif;
+        background: linear-gradient(160deg, #eef3f7, #f8fafb);
+        color: var(--ink);
+        display: grid;
+        place-items: center;
+        padding: 1.5rem;
+      }
+      .card {
+        width: min(420px, 100%);
+        background: var(--paper);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 1.75rem;
+        box-shadow: 0 12px 40px rgba(15, 20, 25, 0.08);
+      }
+      h1 {
+        margin: 0 0 0.35rem;
+        font-size: 1.35rem;
+      }
+      p {
+        margin: 0 0 1rem;
+        color: var(--muted);
+        line-height: 1.5;
+        font-size: 0.95rem;
+      }
+      label {
+        display: block;
+        font-size: 0.8rem;
+        font-weight: 600;
+        margin-bottom: 0.35rem;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+      }
+      input {
+        width: 100%;
+        font: inherit;
+        padding: 0.65rem 0.75rem;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        margin-bottom: 1rem;
+      }
+      button {
+        width: 100%;
+        font: inherit;
+        font-weight: 600;
+        padding: 0.65rem 1rem;
+        border: none;
+        border-radius: 999px;
+        background: var(--accent);
+        color: #fff;
+        cursor: pointer;
+      }
+      button:disabled {
+        opacity: 0.7;
+        cursor: wait;
+      }
+      .msg {
+        margin-top: 0.85rem;
+        font-size: 0.9rem;
+        min-height: 1.25rem;
+      }
+      .msg.error {
+        color: #b42318;
+      }
+      .msg.ok {
+        color: var(--accent);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <h1>Private résumé</h1>
+      <p>This site is invite-only. Paste your access code or open the link you received.</p>
+      <form id="unlockForm">
+        <label for="token">Access code</label>
+        <input id="token" name="token" autocomplete="off" spellcheck="false" required />
+        <button type="submit" id="submitBtn">Unlock</button>
+      </form>
+      <p class="msg" id="msg" role="status" aria-live="polite"></p>
+    </main>
+    <script>
+      (function () {
+        var params = new URLSearchParams(window.location.search);
+        var next = params.get("next") || "/";
+        var invite = params.get("invite") || "";
+        var form = document.getElementById("unlockForm");
+        var tokenInput = document.getElementById("token");
+        var msg = document.getElementById("msg");
+        var submitBtn = document.getElementById("submitBtn");
+
+        function show(text, type) {
+          msg.textContent = text;
+          msg.className = "msg" + (type ? " " + type : "");
+        }
+
+        function unlock(token) {
+          submitBtn.disabled = true;
+          show("Verifying…", "ok");
+          fetch("/api/unlock", {
+            method: "POST",
+            credentials: "same-origin",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ token: token, next: next })
+          })
+            .then(function (res) {
+              return res.json().then(function (data) {
+                return { status: res.status, data: data };
+              });
+            })
+            .then(function (result) {
+              if (result.data && result.data.ok) {
+                show("Access granted. Redirecting…", "ok");
+                window.location.replace(result.data.redirect || "/");
+                return;
+              }
+              var err = (result.data && result.data.error) || "denied";
+              show(
+                err === "expired"
+                  ? "This access code has expired. Request a new link."
+                  : "Invalid access code. Check the link and try again.",
+                "error"
+              );
+              submitBtn.disabled = false;
+            })
+            .catch(function () {
+              show("Network error. Try again.", "error");
+              submitBtn.disabled = false;
+            });
+        }
+
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          unlock(tokenInput.value.trim());
+        });
+
+        if (invite) {
+          tokenInput.value = invite;
+          unlock(invite);
+        }
+      })();
+    </script>
+  </body>
+</html>

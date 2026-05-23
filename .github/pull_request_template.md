@@ -8,8 +8,14 @@
 - [ ] Language switcher works (`en`, `pt-BR`, `es`)
 - [ ] `data/projects.json` valid JSON; demo URLs correct
 - [ ] Print / Save as PDF acceptable on developer + en
-- [ ] No secrets added or exposed
-- [ ] No auth / billing / DNS / GitHub Pages settings change unless intended
+- [ ] No secrets added or exposed (no `.env`, no `ACCESS_TOKEN_SECRET` in repo)
+- [ ] No auth / billing / DNS / hosting settings change unless intended
+
+## Validation (access gate — if this PR touches gate)
+- [ ] `vercel dev` — unauthenticated `/` redirects to `/unlock.html`
+- [ ] Valid invite link unlocks and sets session; `/data/*` blocked without cookie
+- [ ] Expired / tampered token rejected
+- [ ] GitHub Pages disabled or documented if full site must stay private
 
 ## Risk
 - Risk level: low / medium / high
