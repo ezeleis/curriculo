@@ -1,0 +1,201 @@
+{
+  "id": "sdr",
+  "titleLine": {
+    "en": "Sales Development & CRM Specialist",
+    "pt-BR": "Especialista em SDR e CRM",
+    "es": "Especialista en SDR y CRM"
+  },
+  "location": {
+    "en": "Florianópolis, Santa Catarina, Brazil",
+    "pt-BR": "Florianópolis, Santa Catarina, Brasil",
+    "es": "Florianópolis, Santa Catarina, Brasil"
+  },
+  "summary": {
+    "en": "Bilingual sales and CRM professional with 15+ years across US, Latin American, and Brazilian markets. Experienced in lead pipeline management, marketing automation, CRM architecture, and data-driven outreach. Currently coordinates CRM and automation at a law firm (VKM Law Group) and builds AI-assisted workflows at Dell Digital. Strong technical fluency enables custom integrations, reporting, and tooling beyond standard CRM playbooks. English near-native (ECCE Grade A); Spanish native; Portuguese fluent. Combines SDR discipline with hands-on automation skills to improve conversion, follow-up, and pipeline visibility.",
+    "pt-BR": "Profissional bilíngue de vendas e CRM com mais de 15 anos nos mercados dos EUA, LATAM e Brasil. Experiência em pipeline de leads, automação de marketing, arquitetura de CRM e prospecção orientada a dados. Atualmente coordena CRM e automação em escritório de advocacia (VKM Law Group) e constrói fluxos assistidos por IA na Dell Digital. Fluência técnica permite integrações customizadas, relatórios e ferramentas além do CRM padrão. Inglês quase nativo (ECCE nota A); espanhol nativo; português fluente. Combina disciplina de SDR com automação prática para melhorar conversão, follow-up e visibilidade do pipeline.",
+    "es": "Profesional bilingüe de ventas y CRM con más de 15 años en mercados de EE.UU., LATAM y Brasil. Experiencia en pipeline de leads, automatización de marketing, arquitectura CRM y prospección orientada a datos. Actualmente coordina CRM y automatización en un bufete (VKM Law Group) y construye flujos asistidos por IA en Dell Digital. Fluidez técnica permite integraciones personalizadas, informes y herramientas más allá del CRM estándar. Inglés casi nativo (ECCE grado A); español nativo; portugués fluido. Combina disciplina SDR con automatización práctica para mejorar conversión, follow-up y visibilidad del pipeline."
+  },
+  "skills": [
+    {
+      "label": { "en": "Sales & CRM", "pt-BR": "Vendas e CRM", "es": "Ventas y CRM" },
+      "value": {
+        "en": "Lead generation, pipeline management, CRM administration, marketing automation sequences, lead tracking, client intake workflows",
+        "pt-BR": "Geração de leads, gestão de pipeline, administração de CRM, sequências de automação de marketing, rastreamento de leads, fluxos de intake",
+        "es": "Generación de leads, gestión de pipeline, administración CRM, secuencias de automatización de marketing, seguimiento de leads, flujos de intake"
+      }
+    },
+    {
+      "label": { "en": "Outreach & communication", "pt-BR": "Prospecção e comunicação", "es": "Prospección y comunicación" },
+      "value": {
+        "en": "Bilingual client communication (EN/ES/PT), email sequences, follow-up cadences, technical support background for consultative selling",
+        "pt-BR": "Comunicação bilíngue com clientes (EN/ES/PT), sequências de email, cadências de follow-up, background em suporte para venda consultiva",
+        "es": "Comunicación bilingüe con clientes (EN/ES/PT), secuencias de email, cadencias de follow-up, background en soporte para venta consultiva"
+      }
+    },
+    {
+      "label": { "en": "Data & reporting", "pt-BR": "Dados e relatórios", "es": "Datos e informes" },
+      "value": {
+        "en": "MS Excel (advanced), campaign performance analysis, compensation data analysis, SERP/SEO evaluation",
+        "pt-BR": "MS Excel (avançado), análise de performance de campanhas, análise de dados de compensação, avaliação SERP/SEO",
+        "es": "MS Excel (avanzado), análisis de performance de campañas, análisis de datos de compensación, evaluación SERP/SEO"
+      }
+    },
+    {
+      "label": { "en": "Automation & AI", "pt-BR": "Automação e IA", "es": "Automatización e IA" },
+      "value": {
+        "en": "Make, n8n, MindStudio, LLM integrations (Claude API), workflow automation, custom CRM tooling",
+        "pt-BR": "Make, n8n, MindStudio, integrações LLM (API Claude), automação de fluxos, ferramentas CRM customizadas",
+        "es": "Make, n8n, MindStudio, integraciones LLM (API Claude), automatización de flujos, herramientas CRM personalizadas"
+      }
+    },
+    {
+      "label": { "en": "Technical fluency", "pt-BR": "Fluência técnica", "es": "Fluidez técnica" },
+      "value": {
+        "en": "API integrations, TypeScript/Python scripting, SQL reporting, WordPress and low-code platforms",
+        "pt-BR": "Integrações API, scripts TypeScript/Python, relatórios SQL, WordPress e plataformas low-code",
+        "es": "Integraciones API, scripts TypeScript/Python, informes SQL, WordPress y plataformas low-code"
+      }
+    },
+    {
+      "label": { "en": "Spoken languages", "pt-BR": "Idiomas falados", "es": "Idiomas hablados" },
+      "value": {
+        "en": "English (near-native; ECCE — CaMLA, Grade A), Spanish (native), Portuguese (fluent)",
+        "pt-BR": "Inglês (quase nativo; ECCE — CaMLA, nota A), Espanhol (nativo), Português (fluente)",
+        "es": "Inglés (casi nativo; ECCE — CaMLA, grado A), Español (nativo), Portugués (fluido)"
+      }
+    }
+  ],
+  "experience": [
+    {
+      "title": { "en": "CRM & Automation Coordinator", "pt-BR": "Coordenador de CRM e Automação", "es": "Coordinador de CRM y Automatización" },
+      "org": { "en": "VKM Law Group · Florianópolis, SC, Brazil", "pt-BR": "VKM Law Group · Florianópolis, SC, Brasil", "es": "VKM Law Group · Florianópolis, SC, Brasil" },
+      "dates": "May 2025 – Present",
+      "bullets": [
+        {
+          "en": "Own the full CRM lifecycle: pipeline stages, automation rules, lead routing, and data integrity for client intake.",
+          "pt-BR": "Responsável pelo ciclo completo do CRM: estágios do pipeline, regras de automação, roteamento de leads e integridade de dados no intake.",
+          "es": "Responsable del ciclo completo del CRM: etapas del pipeline, reglas de automatización, enrutamiento de leads e integridad de datos en intake."
+        },
+        {
+          "en": "Design and maintain marketing automation sequences that nurture leads from first contact through conversion.",
+          "pt-BR": "Desenho e mantenho sequências de automação de marketing que nutrem leads do primeiro contato à conversão.",
+          "es": "Diseño y mantengo secuencias de automatización de marketing que nutren leads desde el primer contacto hasta la conversión."
+        },
+        {
+          "en": "Build reporting dashboards and internal tools for campaign performance and intake tracking.",
+          "pt-BR": "Construo dashboards de relatórios e ferramentas internas para performance de campanhas e rastreamento de intake.",
+          "es": "Construyo dashboards de informes y herramientas internas para performance de campañas y seguimiento de intake."
+        },
+        {
+          "en": "Analyze marketing data to refine targeting, messaging, and follow-up timing.",
+          "pt-BR": "Analiso dados de marketing para refinar segmentação, mensagens e timing de follow-up.",
+          "es": "Analizo datos de marketing para refinar segmentación, mensajes y timing de follow-up."
+        }
+      ]
+    },
+    {
+      "title": { "en": "AI Automation Specialist", "pt-BR": "Especialista em Automação com IA", "es": "Especialista en Automatización con IA" },
+      "org": { "en": "Dell Digital · Remote", "pt-BR": "Dell Digital · Remoto", "es": "Dell Digital · Remoto" },
+      "dates": "Jul 2021 – Present",
+      "bullets": [
+        {
+          "en": "Automate document handling, data extraction, and reporting workflows using LLM integrations (Claude API).",
+          "pt-BR": "Automatizo tratamento de documentos, extração de dados e relatórios com integrações LLM (API Claude).",
+          "es": "Automatizo tratamiento de documentos, extracción de datos e informes con integraciones LLM (API Claude)."
+        },
+        {
+          "en": "Partner with cross-functional teams to scope automation that reduces manual sales-ops and support overhead.",
+          "pt-BR": "Parceria com equipes multifuncionais para escopo de automação que reduz overhead manual de sales-ops e suporte.",
+          "es": "Colaboro con equipos multifuncionales para alcance de automatización que reduce overhead manual de sales-ops y soporte."
+        },
+        {
+          "en": "Identify process bottlenecks and deliver scripted solutions in Python and TypeScript.",
+          "pt-BR": "Identifico gargalos de processo e entrego soluções scriptadas em Python e TypeScript.",
+          "es": "Identifico cuellos de botella de proceso y entrego soluciones con Python y TypeScript."
+        }
+      ]
+    },
+    {
+      "title": { "en": "Freelance Full Stack Developer", "pt-BR": "Desenvolvedor Full Stack Freelancer", "es": "Desarrollador Full Stack Freelance" },
+      "org": { "en": "Self-Employed · Florianópolis, SC, Brazil", "pt-BR": "Autônomo · Florianópolis, SC, Brasil", "es": "Autónomo · Florianópolis, SC, Brasil" },
+      "dates": "Jan 2024 – Present",
+      "bullets": [
+        {
+          "en": "Deliver CRM integrations and automation for small business clients — bridging sales needs with technical implementation.",
+          "pt-BR": "Entrego integrações CRM e automação para pequenos negócios — conectando necessidades comerciais à implementação técnica.",
+          "es": "Entrego integraciones CRM y automatización para pequeños negocios — conectando necesidades comerciales con implementación técnica."
+        },
+        {
+          "en": "Build custom data pipelines and third-party API integrations to streamline lead capture and follow-up.",
+          "pt-BR": "Construo pipelines de dados e integrações API para otimizar captura de leads e follow-up.",
+          "es": "Construyo pipelines de datos e integraciones API para optimizar captura de leads y follow-up."
+        }
+      ]
+    },
+    {
+      "title": { "en": "Technical Support Representative", "pt-BR": "Representante de Suporte Técnico", "es": "Representante de Soporte Técnico" },
+      "org": { "en": "Teleperformance · Buenos Aires, Argentina", "pt-BR": "Teleperformance · Buenos Aires, Argentina", "es": "Teleperformance · Buenos Aires, Argentina" },
+      "dates": "Jan 2008 – Nov 2009",
+      "bullets": [
+        {
+          "en": "Delivered bilingual (English/Spanish) customer support for US clients — strong consultative communication and objection handling.",
+          "pt-BR": "Suporte bilíngue (inglês/espanhol) para clientes dos EUA — comunicação consultiva e tratamento de objeções.",
+          "es": "Soporte bilingüe (inglés/español) para clientes de EE.UU. — comunicación consultiva y manejo de objeciones."
+        },
+        {
+          "en": "Managed multiple client accounts simultaneously with high adaptability across product lines.",
+          "pt-BR": "Gerenciei múltiplas contas simultaneamente com alta adaptabilidade entre linhas de produto.",
+          "es": "Gestioné múltiples cuentas simultáneamente con alta adaptabilidad entre líneas de producto."
+        }
+      ]
+    },
+    {
+      "title": { "en": "HR Data Analyst", "pt-BR": "Analista de Dados de RH", "es": "Analista de Datos de RR.HH." },
+      "org": { "en": "Hay Group · Buenos Aires, Argentina", "pt-BR": "Hay Group · Buenos Aires, Argentina", "es": "Hay Group · Buenos Aires, Argentina" },
+      "dates": "Mar 2011 – Oct 2011",
+      "bullets": [
+        {
+          "en": "Analyzed compensation datasets for NA and LATAM markets; built structured reports for stakeholder decisions.",
+          "pt-BR": "Analisei datasets de compensação para mercados NA e LATAM; construí relatórios estruturados para decisões.",
+          "es": "Analicé datasets de compensación para mercados NA y LATAM; construí informes estructurados para decisiones."
+        }
+      ]
+    },
+    {
+      "title": { "en": "Internet Assessor (SERP / SEO Analyst)", "pt-BR": "Avaliador de Internet (SERP / SEO)", "es": "Evaluador de Internet (SERP / SEO)" },
+      "org": { "en": "Lionbridge · Remote", "pt-BR": "Lionbridge · Remoto", "es": "Lionbridge · Remoto" },
+      "dates": "Jun 2012 – Nov 2012",
+      "bullets": [
+        {
+          "en": "Evaluated search results quality and relevance — analytical mindset applied to digital marketing outcomes.",
+          "pt-BR": "Avaliei qualidade e relevância de resultados de busca — mindset analítico aplicado a marketing digital.",
+          "es": "Evalué calidad y relevancia de resultados de búsqueda — mindset analítico aplicado a marketing digital."
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": {
+        "en": "Fullstack Developer — Information Technology (formal technical program)",
+        "pt-BR": "Desenvolvedor Fullstack — Tecnologia da Informação (programa técnico formal)",
+        "es": "Desarrollador Fullstack — Tecnología de la Información (programa técnico formal)"
+      },
+      "school": {
+        "en": "SENAI/SC – Serviço Nacional de Aprendizagem Industrial",
+        "pt-BR": "SENAI/SC – Serviço Nacional de Aprendizagem Industrial",
+        "es": "SENAI/SC – Serviço Nacional de Aprendizagem Industrial"
+      },
+      "dates": "Jan 2023 – Dec 2023"
+    }
+  ],
+  "certifications": [
+    { "name": { "en": "ECCE (Certificate of Competency in English), Grade A", "pt-BR": "ECCE (Certificate of Competency in English), nota A", "es": "ECCE (Certificate of Competency in English), grado A" }, "issuer": { "en": "CaMLA", "pt-BR": "CaMLA", "es": "CaMLA" } },
+    { "name": { "en": "Fullstack Developer — Information Technology", "pt-BR": "Desenvolvedor Fullstack — Tecnologia da Informação", "es": "Desarrollador Fullstack — Tecnología de la Información" }, "issuer": { "en": "SENAI/SC — formal technical certification", "pt-BR": "SENAI/SC — certificação técnica formal", "es": "SENAI/SC — certificación técnica formal" } },
+    { "name": { "en": "Learn SQL", "pt-BR": "Learn SQL", "es": "Learn SQL" }, "issuer": { "en": "Online learning platform", "pt-BR": "Plataforma de cursos online", "es": "Plataforma de cursos online" } }
+  ],
+  "contact": {
+    "email": "facundoezequieleis@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/facundo-ezequiel-leis-pou-a7bbab27"
+  }
+}

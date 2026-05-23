@@ -1,0 +1,79 @@
+{
+  "projects": [
+    {
+      "id": "truco",
+      "codename": "TRUCO-BOT",
+      "featured": true,
+      "order": 1,
+      "demoUrl": "https://truco-cards-robot-4.vercel.app/",
+      "status": "mvp",
+      "stack": ["React", "TypeScript", "Vite", "Supabase", "TensorFlow.js"],
+      "profiles": ["developer"],
+      "name": {
+        "en": "Truco Cards Robot",
+        "pt-BR": "Truco Cards Robot",
+        "es": "Truco Cards Robot"
+      },
+      "tagline": {
+        "en": "Argentine Truco card game — single-player AI and real-time multiplayer.",
+        "pt-BR": "Truco argentino — modo single-player com IA e multiplayer em tempo real.",
+        "es": "Truco argentino — modo un jugador con IA y multijugador en tiempo real."
+      },
+      "description": {
+        "en": "Full-stack web game with rule-based AI, Supabase Realtime for two-player matches, and ML data collection infrastructure. Deployed on Vercel with a live Supabase backend.",
+        "pt-BR": "Jogo web full-stack com IA baseada em regras, Supabase Realtime para partidas a dois e infraestrutura de coleta de dados para ML. Publicado na Vercel com backend Supabase ao vivo.",
+        "es": "Juego web full-stack con IA basada en reglas, Supabase Realtime para partidas a dos e infraestructura de recolección de datos para ML. Desplegado en Vercel con backend Supabase en vivo."
+      }
+    },
+    {
+      "id": "framesync",
+      "codename": "REAB",
+      "featured": true,
+      "order": 2,
+      "demoUrl": null,
+      "status": "in_dev",
+      "stack": ["Vanilla JS", "Supabase", "IndexedDB", "Web Crypto", "PWA"],
+      "profiles": ["developer"],
+      "name": {
+        "en": "FrameSync",
+        "pt-BR": "FrameSync",
+        "es": "FrameSync"
+      },
+      "tagline": {
+        "en": "Embeddable file manager with offline-first sync and encryption.",
+        "pt-BR": "Gerenciador de arquivos embeddable com sync offline-first e criptografia.",
+        "es": "Gestor de archivos embebible con sync offline-first y cifrado."
+      },
+      "description": {
+        "en": "Zero-dependency embeddable library (`framesync.js`) derived from the RehabPlay legacy codebase. Virtual folders, drag-and-drop upload, AES-256-GCM encrypted offline queue, and Supabase-backed storage. Currently in active development with local prototype and mocked data.",
+        "pt-BR": "Biblioteca embeddable sem dependências (`framesync.js`) derivada do legado RehabPlay. Pastas virtuais, upload drag-and-drop, fila offline criptografada AES-256-GCM e armazenamento Supabase. Em desenvolvimento ativo com protótipo local e dados mockados.",
+        "es": "Biblioteca embebible sin dependencias (`framesync.js`) derivada del legado RehabPlay. Carpetas virtuales, carga drag-and-drop, cola offline cifrada AES-256-GCM y almacenamiento Supabase. En desarrollo activo con prototipo local y datos simulados."
+      }
+    },
+    {
+      "id": "fechou",
+      "codename": "ATLAS",
+      "featured": true,
+      "order": 3,
+      "demoUrl": null,
+      "status": "in_dev",
+      "stack": ["Next.js", "TypeScript", "PostgreSQL", "WhatsApp API", "Meta Ads"],
+      "profiles": ["developer", "sdr"],
+      "name": {
+        "en": "Fechou CRM",
+        "pt-BR": "Fechou CRM",
+        "es": "Fechou CRM"
+      },
+      "tagline": {
+        "en": "Real-estate CRM for Florianópolis agencies — leads, WhatsApp, and pipeline.",
+        "pt-BR": "CRM imobiliário para imobiliárias de Florianópolis — leads, WhatsApp e pipeline.",
+        "es": "CRM inmobiliario para agencias de Florianópolis — leads, WhatsApp y pipeline."
+      },
+      "description": {
+        "en": "Desktop-first PWA for small Brazilian real-estate teams: Meta Ads lead capture, shared WhatsApp inbox, follow-up sequences, RBAC, and owner dashboard. Planning and architecture complete; implementation in progress.",
+        "pt-BR": "PWA desktop-first para pequenas equipes imobiliárias brasileiras: captura de leads Meta Ads, inbox WhatsApp compartilhado, sequências de follow-up, RBAC e dashboard do proprietário. Planejamento e arquitetura concluídos; implementação em andamento.",
+        "es": "PWA desktop-first para equipos inmobiliarios pequeños en Brasil: captura de leads Meta Ads, inbox WhatsApp compartido, secuencias de follow-up, RBAC y dashboard del propietario. Planificación y arquitectura completas; implementación en curso."
+      }
+    }
+  ]
+}

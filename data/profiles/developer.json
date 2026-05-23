@@ -1,0 +1,257 @@
+{
+  "id": "developer",
+  "titleLine": {
+    "en": "Full Stack Web Developer",
+    "pt-BR": "Desenvolvedor Web Full Stack",
+    "es": "Desarrollador Web Full Stack"
+  },
+  "location": {
+    "en": "Florianópolis, Santa Catarina, Brazil",
+    "pt-BR": "Florianópolis, Santa Catarina, Brasil",
+    "es": "Florianópolis, Santa Catarina, Brasil"
+  },
+  "summary": {
+    "en": "Full Stack Web Developer with a formal technical certification in Information Technology from SENAI/SC and 2+ years of hands-on development experience building end-to-end web applications. Strong in TypeScript, JavaScript, Python (including data-oriented work), SQL, and Java with the Spring Framework and related libraries. Comfortable across modern frontend stacks (vanilla JavaScript, Angular, React, React Native, Vite-based workflows), backend APIs, and CRM-driven automation. Currently implementing a RAG (retrieval-augmented generation) system; practical experience with LLM integrations, agent-style workflows, and automation platforms (Claude, Mistral, Cursor, Lovable, Make, MindStudio, n8n). Foundational exposure to machine learning concepts alongside deep day-to-day use of AI-assisted delivery. Background in technical support and CRM automation supports system architecture, data flow, and real-world requirements. English near-native; Spanish (native); Portuguese (fluent); experience across US, Latin American, and Brazilian markets.",
+    "pt-BR": "Desenvolvedor Web Full Stack com certificação técnica formal em Tecnologia da Informação pelo SENAI/SC e mais de 2 anos de experiência prática construindo aplicações web de ponta a ponta. Forte em TypeScript, JavaScript, Python (incluindo trabalho orientado a dados), SQL e Java com Spring Framework. Confortável em stacks frontend modernas (JavaScript vanilla, Angular, React, React Native, Vite), APIs backend e automação baseada em CRM. Atualmente implementando um sistema RAG; experiência prática com integrações LLM, fluxos de agentes e plataformas de automação (Claude, Mistral, Cursor, Lovable, Make, MindStudio, n8n). Exposição introdutória a machine learning e uso diário de entrega assistida por IA. Background em suporte técnico e automação de CRM reforça arquitetura de sistemas e requisitos reais. Inglês quase nativo; espanhol (nativo); português (fluente); experiência nos mercados dos EUA, LATAM e Brasil.",
+    "es": "Desarrollador Web Full Stack con certificación técnica formal en Tecnología de la Información de SENAI/SC y más de 2 años de experiencia práctica construyendo aplicaciones web de punta a punta. Sólido en TypeScript, JavaScript, Python (incluyendo trabajo orientado a datos), SQL y Java con Spring Framework. Cómodo en stacks frontend modernos (JavaScript vanilla, Angular, React, React Native, Vite), APIs backend y automatización basada en CRM. Actualmente implementando un sistema RAG; experiencia práctica con integraciones LLM, flujos de agentes y plataformas de automatización (Claude, Mistral, Cursor, Lovable, Make, MindStudio, n8n). Exposición introductoria a machine learning y uso diario de entrega asistida por IA. Background en soporte técnico y automatización de CRM refuerza arquitectura de sistemas y requisitos reales. Inglés casi nativo; español (nativo); portugués (fluido); experiencia en mercados de EE.UU., LATAM y Brasil."
+  },
+  "skills": [
+    {
+      "label": { "en": "Languages", "pt-BR": "Linguagens", "es": "Lenguajes" },
+      "value": {
+        "en": "TypeScript, JavaScript, Python (data-focused scripting and analysis), SQL, Java (Spring Framework and ecosystem)",
+        "pt-BR": "TypeScript, JavaScript, Python (scripts e análise de dados), SQL, Java (Spring Framework e ecossistema)",
+        "es": "TypeScript, JavaScript, Python (scripts y análisis de datos), SQL, Java (Spring Framework y ecosistema)"
+      }
+    },
+    {
+      "label": { "en": "Frontend & mobile", "pt-BR": "Frontend e mobile", "es": "Frontend y mobile" },
+      "value": {
+        "en": "HTML5, CSS3, vanilla JavaScript, Angular, React, React Native; Vite-based build and dev workflows",
+        "pt-BR": "HTML5, CSS3, JavaScript vanilla, Angular, React, React Native; workflows Vite",
+        "es": "HTML5, CSS3, JavaScript vanilla, Angular, React, React Native; workflows con Vite"
+      }
+    },
+    {
+      "label": { "en": "Backend & APIs", "pt-BR": "Backend e APIs", "es": "Backend y APIs" },
+      "value": {
+        "en": "Node.js, REST APIs, Java / Spring",
+        "pt-BR": "Node.js, REST APIs, Java / Spring",
+        "es": "Node.js, REST APIs, Java / Spring"
+      }
+    },
+    {
+      "label": { "en": "Databases", "pt-BR": "Bancos de dados", "es": "Bases de datos" },
+      "value": {
+        "en": "SQL (relational), CRM systems",
+        "pt-BR": "SQL (relacional), sistemas CRM",
+        "es": "SQL (relacional), sistemas CRM"
+      }
+    },
+    {
+      "label": { "en": "AI, ML & automation", "pt-BR": "IA, ML e automação", "es": "IA, ML y automatización" },
+      "value": {
+        "en": "RAG implementation (current); introductory ML; AI agents, Claude, Mistral, Cursor, Lovable, Make, MindStudio, n8n, custom pipelines",
+        "pt-BR": "Implementação RAG (atual); ML introdutório; agentes de IA, Claude, Mistral, Cursor, Lovable, Make, MindStudio, n8n, pipelines customizados",
+        "es": "Implementación RAG (actual); ML introductorio; agentes de IA, Claude, Mistral, Cursor, Lovable, Make, MindStudio, n8n, pipelines personalizados"
+      }
+    },
+    {
+      "label": { "en": "Low-code, CMS & integrations", "pt-BR": "Low-code, CMS e integrações", "es": "Low-code, CMS e integraciones" },
+      "value": {
+        "en": "WordPress; no-code / low-code tools and third-party integrations; AI-assisted delivery",
+        "pt-BR": "WordPress; ferramentas no-code / low-code e integrações; entrega assistida por IA",
+        "es": "WordPress; herramientas no-code / low-code e integraciones; entrega asistida por IA"
+      }
+    },
+    {
+      "label": { "en": "Blockchain", "pt-BR": "Blockchain", "es": "Blockchain" },
+      "value": {
+        "en": "Smart contracts (advanced certification)",
+        "pt-BR": "Smart contracts (certificação avançada)",
+        "es": "Smart contracts (certificación avanzada)"
+      }
+    },
+    {
+      "label": { "en": "Tools & platforms", "pt-BR": "Ferramentas e plataformas", "es": "Herramientas y plataformas" },
+      "value": {
+        "en": "Git, CRM platforms, SERP/SEO analysis tools, MS Excel (advanced)",
+        "pt-BR": "Git, plataformas CRM, ferramentas SERP/SEO, MS Excel (avançado)",
+        "es": "Git, plataformas CRM, herramientas SERP/SEO, MS Excel (avanzado)"
+      }
+    },
+    {
+      "label": { "en": "Spoken languages", "pt-BR": "Idiomas falados", "es": "Idiomas hablados" },
+      "value": {
+        "en": "English (near-native; ECCE — CaMLA, Grade A), Spanish (native), Portuguese (fluent)",
+        "pt-BR": "Inglês (quase nativo; ECCE — CaMLA, nota A), Espanhol (nativo), Português (fluente)",
+        "es": "Inglés (casi nativo; ECCE — CaMLA, grado A), Español (nativo), Portugués (fluido)"
+      }
+    }
+  ],
+  "experience": [
+    {
+      "title": { "en": "Freelance Full Stack Developer", "pt-BR": "Desenvolvedor Full Stack Freelancer", "es": "Desarrollador Full Stack Freelance" },
+      "org": { "en": "Self-Employed · Florianópolis, SC, Brazil", "pt-BR": "Autônomo · Florianópolis, SC, Brasil", "es": "Autónomo · Florianópolis, SC, Brasil" },
+      "dates": "Jan 2024 – Present",
+      "bullets": [
+        {
+          "en": "Design, develop, and deploy full-cycle web applications as a solo developer, owning the entire stack from database schema to UI.",
+          "pt-BR": "Projeto, desenvolvo e publico aplicações web completas como desenvolvedor solo, do schema do banco à UI.",
+          "es": "Diseño, desarrollo y despliego aplicaciones web completas como desarrollador solo, del esquema de base de datos a la UI."
+        },
+        {
+          "en": "Build automation workflows and integrate third-party APIs to streamline client business processes.",
+          "pt-BR": "Construo fluxos de automação e integro APIs de terceiros para otimizar processos de clientes.",
+          "es": "Construyo flujos de automatización e integro APIs de terceros para optimizar procesos de clientes."
+        },
+        {
+          "en": "Implement CRM integrations and data pipelines for small business clients.",
+          "pt-BR": "Implemento integrações CRM e pipelines de dados para pequenos negócios.",
+          "es": "Implemento integraciones CRM y pipelines de datos para pequeños negocios."
+        },
+        {
+          "en": "Apply TypeScript across projects to enforce type safety and improve code maintainability.",
+          "pt-BR": "Aplico TypeScript nos projetos para type safety e manutenibilidade.",
+          "es": "Aplico TypeScript en proyectos para type safety y mantenibilidad."
+        }
+      ]
+    },
+    {
+      "title": { "en": "AI Automation Specialist", "pt-BR": "Especialista em Automação com IA", "es": "Especialista en Automatización con IA" },
+      "org": { "en": "Dell Digital · Remote", "pt-BR": "Dell Digital · Remoto", "es": "Dell Digital · Remoto" },
+      "dates": "Jul 2021 – Present",
+      "bullets": [
+        {
+          "en": "Develop and maintain AI-driven automation pipelines to optimize internal workflows and reduce manual processing overhead.",
+          "pt-BR": "Desenvolvo e mantenho pipelines de automação com IA para otimizar fluxos internos e reduzir processamento manual.",
+          "es": "Desarrollo y mantengo pipelines de automatización con IA para optimizar flujos internos y reducir procesamiento manual."
+        },
+        {
+          "en": "Integrate LLM-based tools (including Anthropic Claude API) into business processes to automate document handling, data extraction, and reporting.",
+          "pt-BR": "Integro ferramentas LLM (incluindo API Anthropic Claude) em processos de negócio para automatizar documentos, extração de dados e relatórios.",
+          "es": "Integro herramientas LLM (incluyendo API Anthropic Claude) en procesos de negocio para automatizar documentos, extracción de datos e informes."
+        },
+        {
+          "en": "Collaborate with technical teams to scope, prototype, and iterate on automation solutions.",
+          "pt-BR": "Colaboro com equipes técnicas para escopo, protótipo e iteração de soluções de automação.",
+          "es": "Colaboro con equipos técnicos para alcance, prototipo e iteración de soluciones de automatización."
+        },
+        {
+          "en": "Analyze operational data to identify bottlenecks and implement scripted solutions using Python and TypeScript.",
+          "pt-BR": "Analiso dados operacionais para identificar gargalos e implementar soluções scriptadas em Python e TypeScript.",
+          "es": "Analizo datos operacionales para identificar cuellos de botella e implementar soluciones con Python y TypeScript."
+        }
+      ]
+    },
+    {
+      "title": { "en": "CRM & Automation Coordinator", "pt-BR": "Coordenador de CRM e Automação", "es": "Coordinador de CRM y Automatización" },
+      "org": { "en": "VKM Law Group · Florianópolis, SC, Brazil", "pt-BR": "VKM Law Group · Florianópolis, SC, Brasil", "es": "VKM Law Group · Florianópolis, SC, Brasil" },
+      "dates": "May 2025 – Present",
+      "bullets": [
+        {
+          "en": "Architect and manage the CRM system, including automation rules, pipeline configuration, and data integrity workflows.",
+          "pt-BR": "Arquiteto e gerencio o CRM, incluindo regras de automação, pipeline e integridade de dados.",
+          "es": "Arquitecto y gestiono el CRM, incluyendo reglas de automatización, pipeline e integridad de datos."
+        },
+        {
+          "en": "Build and maintain marketing automation sequences and lead tracking integrations.",
+          "pt-BR": "Construo e mantenho sequências de automação de marketing e integrações de rastreamento de leads.",
+          "es": "Construyo y mantengo secuencias de automatización de marketing e integraciones de seguimiento de leads."
+        },
+        {
+          "en": "Develop internal tooling to streamline client intake data processing and reporting.",
+          "pt-BR": "Desenvolvo ferramentas internas para intake de clientes e relatórios.",
+          "es": "Desarrollo herramientas internas para intake de clientes e informes."
+        },
+        {
+          "en": "Conduct marketing performance analysis using data-driven methods to improve campaign targeting.",
+          "pt-BR": "Realizo análise de performance de marketing com métodos data-driven para melhorar campanhas.",
+          "es": "Realizo análisis de performance de marketing con métodos data-driven para mejorar campañas."
+        }
+      ]
+    },
+    {
+      "title": { "en": "Internet Assessor (SERP / SEO Analyst)", "pt-BR": "Avaliador de Internet (SERP / SEO)", "es": "Evaluador de Internet (SERP / SEO)" },
+      "org": { "en": "Lionbridge · Remote", "pt-BR": "Lionbridge · Remoto", "es": "Lionbridge · Remoto" },
+      "dates": "Jun 2012 – Nov 2012",
+      "bullets": [
+        {
+          "en": "Evaluated search engine results pages (SERPs) to assess relevance, quality, and ranking accuracy.",
+          "pt-BR": "Avaliei SERPs para relevância, qualidade e precisão de ranking.",
+          "es": "Evalué SERPs para relevancia, calidad y precisión de ranking."
+        },
+        {
+          "en": "Contributed structured feedback used to train and tune search ranking algorithms.",
+          "pt-BR": "Contribuí com feedback estruturado para treinar algoritmos de busca.",
+          "es": "Contribuí con feedback estructurado para entrenar algoritmos de búsqueda."
+        }
+      ]
+    },
+    {
+      "title": { "en": "Technical Support Representative", "pt-BR": "Representante de Suporte Técnico", "es": "Representante de Soporte Técnico" },
+      "org": { "en": "Teleperformance · Buenos Aires, Argentina", "pt-BR": "Teleperformance · Buenos Aires, Argentina", "es": "Teleperformance · Buenos Aires, Argentina" },
+      "dates": "Jan 2008 – Nov 2009",
+      "bullets": [
+        {
+          "en": "Provided bilingual (English/Spanish) technical support for US-based clients across VoIP, ISP, and PTT verticals.",
+          "pt-BR": "Suporte técnico bilíngue (inglês/espanhol) para clientes dos EUA em VoIP, ISP e PTT.",
+          "es": "Soporte técnico bilingüe (inglés/español) para clientes de EE.UU. en VoIP, ISP y PTT."
+        },
+        {
+          "en": "Diagnosed and resolved connectivity, configuration, and hardware issues in real time.",
+          "pt-BR": "Diagnostiquei e resolvi problemas de conectividade, configuração e hardware em tempo real.",
+          "es": "Diagnostiqué y resolví problemas de conectividad, configuración y hardware en tiempo real."
+        },
+        {
+          "en": "Operated across multiple projects simultaneously, adapting to different technical environments and protocols.",
+          "pt-BR": "Atuei em múltiplos projetos simultaneamente, adaptando-me a diferentes ambientes técnicos.",
+          "es": "Trabajé en múltiples proyectos simultáneamente, adaptándome a distintos entornos técnicos."
+        }
+      ]
+    },
+    {
+      "title": { "en": "HR Data Analyst", "pt-BR": "Analista de Dados de RH", "es": "Analista de Datos de RR.HH." },
+      "org": { "en": "Hay Group · Buenos Aires, Argentina", "pt-BR": "Hay Group · Buenos Aires, Argentina", "es": "Hay Group · Buenos Aires, Argentina" },
+      "dates": "Mar 2011 – Oct 2011",
+      "bullets": [
+        {
+          "en": "Processed and analyzed compensation datasets for North American and Latin American markets using MS Excel (advanced formulas, pivot tables, reporting).",
+          "pt-BR": "Processei e analisei datasets de compensação para mercados NA e LATAM com MS Excel avançado.",
+          "es": "Procesé y analicé datasets de compensación para mercados NA y LATAM con MS Excel avanzado."
+        },
+        {
+          "en": "Built and maintained structured databases, ensuring data accuracy across Canada, USA, and LATAM projects.",
+          "pt-BR": "Construí e mantive bases estruturadas, garantindo precisão em projetos Canadá, EUA e LATAM.",
+          "es": "Construí y mantuve bases estructuradas, garantizando precisión en proyectos Canadá, EE.UU. y LATAM."
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": {
+        "en": "Fullstack Developer — Information Technology (formal technical program)",
+        "pt-BR": "Desenvolvedor Fullstack — Tecnologia da Informação (programa técnico formal)",
+        "es": "Desarrollador Fullstack — Tecnología de la Información (programa técnico formal)"
+      },
+      "school": {
+        "en": "SENAI/SC – Serviço Nacional de Aprendizagem Industrial",
+        "pt-BR": "SENAI/SC – Serviço Nacional de Aprendizagem Industrial",
+        "es": "SENAI/SC – Serviço Nacional de Aprendizagem Industrial"
+      },
+      "dates": "Jan 2023 – Dec 2023"
+    }
+  ],
+  "certifications": [
+    { "name": { "en": "Fullstack Developer — Information Technology", "pt-BR": "Desenvolvedor Fullstack — Tecnologia da Informação", "es": "Desarrollador Fullstack — Tecnología de la Información" }, "issuer": { "en": "SENAI/SC — formal technical certification", "pt-BR": "SENAI/SC — certificação técnica formal", "es": "SENAI/SC — certificación técnica formal" } },
+    { "name": { "en": "ECCE (Certificate of Competency in English), Grade A", "pt-BR": "ECCE (Certificate of Competency in English), nota A", "es": "ECCE (Certificate of Competency in English), grado A" }, "issuer": { "en": "CaMLA", "pt-BR": "CaMLA", "es": "CaMLA" } },
+    { "name": { "en": "Blockchain Advanced", "pt-BR": "Blockchain Avançado", "es": "Blockchain Avanzado" }, "issuer": { "en": "Online learning platform", "pt-BR": "Plataforma de cursos online", "es": "Plataforma de cursos online" } },
+    { "name": { "en": "Learn SQL", "pt-BR": "Learn SQL", "es": "Learn SQL" }, "issuer": { "en": "Online learning platform", "pt-BR": "Plataforma de cursos online", "es": "Plataforma de cursos online" } },
+    { "name": { "en": "Python", "pt-BR": "Python", "es": "Python" }, "issuer": { "en": "Online learning platform", "pt-BR": "Plataforma de cursos online", "es": "Plataforma de cursos online" } }
+  ],
+  "contact": {
+    "email": "facundoezequieleis@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/facundo-ezequiel-leis-pou-a7bbab27"
+  }
+}
