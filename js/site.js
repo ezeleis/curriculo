@@ -362,7 +362,7 @@
       "</a> · " +
       '<a href="' +
       escapeHtml(p.contact.linkedin) +
-      '" rel="noopener noreferrer">LinkedIn</a></p></header>" +
+      '" rel="noopener noreferrer">LinkedIn</a></p></header>' +
       '<hr class="rule" />' +
       '<section aria-labelledby="summary-heading"><h2 id="summary-heading">' +
       escapeHtml(t("sections.summary")) +
