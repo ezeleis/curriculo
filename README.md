@@ -1,9 +1,10 @@
-# Facundo Leis Pou — CV & Portfolio (GitHub Pages)
+# Facundo Leis Pou — CV & Portfolio
 
 Merged static résumé + project showcase for dev job applications (primary) and SDR/sales opportunities (secondary).
 
 - **Repository:** [github.com/ezeleis/curriculo](https://github.com/ezeleis/curriculo)
-- **Published site:** [ezeleis.github.io/curriculo/](https://ezeleis.github.io/curriculo/)
+- **Gated deploy (recommended):** Vercel + invite-only access — see [docs/access-gate.md](docs/access-gate.md)
+- **Legacy public URL:** [ezeleis.github.io/curriculo/](https://ezeleis.github.io/curriculo/) — disable GitHub Pages when using the gate
 
 Supersedes the legacy `curriculo/` folder for new updates.
 
@@ -13,17 +14,14 @@ Supersedes the legacy `curriculo/` folder for new updates.
 facundo-leis-resume/
 ├── index.html              ← CV (profile + language driven)
 ├── work.html               ← project showcase
-├── data/
-│   ├── profiles/
-│   │   ├── developer.json  ← default: dev-focused CV
-│   │   └── sdr.json        ← sales/SDR-oriented CV
-│   ├── projects.json       ← work page source of truth
-│   └── i18n/
-│       ├── en.json         ← UI labels (default)
-│       ├── pt-BR.json
-│       └── es.json
+├── unlock.html             ← invite-only entry (Vercel gate)
+├── middleware.js           ← Edge gate (Vercel only)
+├── api/unlock.js           ← token exchange → session cookie
+├── lib/token.mjs           ← HMAC invite + session tokens
+├── data/                   ← CV + projects JSON
 ├── js/site.js              ← switchers + render (no build step)
-└── styles.css
+├── scripts/issue-invite.mjs← issue share links (run locally)
+└── docs/access-gate.md     ← security model + setup
 ```
 
 ## Profiles & languages
@@ -41,17 +39,33 @@ Preferences persist in `localStorage` and URL query params:
 
 ## Local preview
 
-Serve the folder over HTTP (required for JSON fetch):
+Serve the folder over HTTP (required for JSON fetch). Gate is **off** locally:
 
 ```bash
 npx --yes serve .
 ```
 
-Then open `http://localhost:3000` (or the port shown).
+To test the access gate, use [Vercel CLI](https://vercel.com/docs/cli): `npx vercel dev` with `.env` from `.env.example`.
 
-## GitHub Pages
+## Private access (invite links)
 
-Configured for **Deploy from a branch** → `main` → `/ (root)`. Push updates to refresh the live site within a few minutes.
+GitHub Pages cannot enforce real authentication (static files are public). For invite-only sharing:
+
+1. Deploy on **Vercel** with `ACCESS_GATE_ENABLED=true` and `ACCESS_TOKEN_SECRET` set — full guide in [docs/access-gate.md](docs/access-gate.md).
+2. **Disable GitHub Pages** for this repo (or keep only a minimal public stub) so JSON is not world-readable on `github.io`.
+3. Issue links locally:
+
+```powershell
+$env:ACCESS_TOKEN_SECRET = "same-secret-as-vercel"
+$env:SITE_BASE_URL = "https://your-app.vercel.app"
+node scripts/issue-invite.mjs --days 7 --label "Recruiter name"
+```
+
+Share the printed URL; recipient gets a 24h browser session (configurable).
+
+## GitHub Pages (optional / legacy)
+
+If enabled, publishes static files from `main` with **no gate**. Use only for a public teaser or disable when Vercel gate is active.
 
 ## PDF for applications
 
@@ -107,7 +121,7 @@ Each translatable field uses `{ "en": "...", "pt-BR": "...", "es": "..." }`.
 git checkout -b feat/showcase-<slug>
 # … edit, commit …
 git push -u origin HEAD
-# open PR → review → merge to main (publishes GitHub Pages)
+# open PR → review → merge to main (Vercel production deploy)
 ```
 
 Branch naming: `feat/showcase-<slug>`, `fix/showcase-<slug>`, `chore/showcase-<slug>`.
