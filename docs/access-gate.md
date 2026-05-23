@@ -66,14 +66,35 @@ node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
 
 ## Issue an invite link
 
+### Option A — easiest day-to-day (recommended)
+
+One-time setup:
+
 ```powershell
 cd c:\Users\Admin\Projects\facundo-leis-resume
-$env:ACCESS_TOKEN_SECRET = "your-secret-from-vercel"
-$env:SITE_BASE_URL = "https://your-app.vercel.app"
-node scripts/issue-invite.mjs --days 7 --label "Google recruiter"
+Copy-Item .env.example .env.local
+# Edit .env.local — paste SITE_BASE_URL and ACCESS_TOKEN_SECRET from Vercel
 ```
 
-Share the printed URL only with the intended recipient.
+Every time you need a link:
+
+```powershell
+node scripts/issue-invite.mjs --label "Google recruiter"
+```
+
+Or shorter:
+
+```powershell
+.\scripts\invite.ps1 -Label "Google recruiter"
+```
+
+### Option B — one-line paste (no file)
+
+```powershell
+node scripts/issue-invite.mjs --paste "https://your-app.vercel.app|YOUR_SECRET" --label "Google recruiter"
+```
+
+Pipe `|` between URL and secret. Copy the **Share link** line from the output.
 
 ## Local development
 
