@@ -20,24 +20,24 @@ import { createInviteToken } from "../lib/token.mjs";
 
 var root = join(dirname(fileURLToPath(import.meta.url)), "..");
 
-function loadEnvFile(filename) {
+function loadEnvFile(filename, overrideExisting) {
   var path = join(root, filename);
-  if (!existsSync(path)) return;
-  readFileSync(path, "utf8")
-    .split(/\r?\n/)
-    .forEach(function (line) {
-      var trimmed = line.trim();
-      if (!trimmed || trimmed.charAt(0) === "#") return;
-      var eq = trimmed.indexOf("=");
-      if (eq === -1) return;
-      var key = trimmed.slice(0, eq).trim();
-      var val = trimmed.slice(eq + 1).trim().replace(/^["']|["']$/g, "");
-      if (!process.env[key]) process.env[key] = val;
-    });
+  if (!existsSync(path)) return false;
+  var raw = readFileSync(path, "utf8").replace(/^\uFEFF/, "");
+  raw.split(/\r?\n/).forEach(function (line) {
+    var trimmed = line.trim();
+    if (!trimmed || trimmed.charAt(0) === "#") return;
+    var eq = trimmed.indexOf("=");
+    if (eq === -1) return;
+    var key = trimmed.slice(0, eq).trim();
+    var val = trimmed.slice(eq + 1).trim().replace(/^["']|["']$/g, "");
+    if (overrideExisting || !process.env[key]) process.env[key] = val;
+  });
+  return true;
 }
 
-loadEnvFile(".env.local");
-loadEnvFile(".env");
+var hasEnvLocal = loadEnvFile(".env.local", true);
+loadEnvFile(".env", false);
 
 function readArg(name, fallback) {
   var idx = process.argv.indexOf(name);
@@ -56,12 +56,31 @@ if (paste) {
   process.env.ACCESS_TOKEN_SECRET = paste.slice(pipe + 1).trim();
 }
 
+var secretArg = readArg("--secret", "");
+if (secretArg) {
+  process.env.ACCESS_TOKEN_SECRET = secretArg.trim();
+}
+
 var secret = process.env.ACCESS_TOKEN_SECRET;
 if (!secret || secret.length < 32) {
   console.error("Missing ACCESS_TOKEN_SECRET (min 32 chars).");
   console.error("");
-  console.error("Option A — one-time: copy .env.example to .env.local and fill values.");
-  console.error('Option B — one line: --paste "https://your-app.vercel.app|YOUR_SECRET"');
+  console.error("Diagnostics:");
+  console.error("  .env.local in repo root : " + (hasEnvLocal ? "found" : "NOT FOUND"));
+  console.error("  ACCESS_TOKEN_SECRET     : " +
+      (secret ? "too short (" + secret.length + " chars)" : "empty or not set"));
+  if (process.env.ACCESS_TOKEN_SECRET && secret && secret.length < 32) {
+    console.error("  Hint                    : old PowerShell $env:ACCESS_TOKEN_SECRET may override .env.local");
+    console.error("                          run: Remove-Item Env:ACCESS_TOKEN_SECRET -ErrorAction SilentlyContinue");
+  }
+  console.error("  Repo root               : " + root);
+  console.error("");
+  console.error("Fix — pick one:");
+  console.error("  1. Create .env.local next to index.html with:");
+  console.error("       SITE_BASE_URL=https://your-app.vercel.app");
+  console.error("       ACCESS_TOKEN_SECRET=paste-from-vercel");
+  console.error('  2. One line: --paste "https://your-app.vercel.app|YOUR_SECRET"');
+  console.error("  3. Flags:   --site URL --secret YOUR_SECRET");
   process.exit(1);
 }
 

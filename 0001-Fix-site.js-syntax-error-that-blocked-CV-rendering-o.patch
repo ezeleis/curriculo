@@ -1,0 +1,29 @@
+From 7a384f2d5572b61fb80ab76129b2241b225edfc0 Mon Sep 17 00:00:00 2001
+From: ezleis <facundoezequieleis@gmail.com>
+Date: Sat, 23 May 2026 15:02:58 -0400
+Subject: [PATCH] Fix site.js syntax error that blocked CV rendering on GitHub
+ Pages.
+
+A mismatched quote on the LinkedIn header string caused a parse error at load time, leaving the page stuck on Loading.
+
+Co-authored-by: Cursor <cursoragent@cursor.com>
+---
+ js/site.js | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/js/site.js b/js/site.js
+index d6970be..3db132b 100644
+--- a/js/site.js
++++ b/js/site.js
+@@ -362,7 +362,7 @@
+       "</a> · " +
+       '<a href="' +
+       escapeHtml(p.contact.linkedin) +
+-      '" rel="noopener noreferrer">LinkedIn</a></p></header>" +
++      '" rel="noopener noreferrer">LinkedIn</a></p></header>' +
+       '<hr class="rule" />' +
+       '<section aria-labelledby="summary-heading"><h2 id="summary-heading">' +
+       escapeHtml(t("sections.summary")) +
+-- 
+2.48.1.windows.1
+
