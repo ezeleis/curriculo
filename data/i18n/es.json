@@ -1,0 +1,47 @@
+{
+  "siteName": "Facundo Leis Pou",
+  "nav": {
+    "resume": "Currículum",
+    "work": "Proyectos",
+    "contact": "Contacto"
+  },
+  "switcher": {
+    "profile": "Perfil",
+    "language": "Idioma",
+    "developer": "Desarrollador",
+    "sdr": "SDR / Ventas"
+  },
+  "actions": {
+    "downloadPdf": "Descargar PDF",
+    "printPdf": "Imprimir / Guardar PDF",
+    "viewWork": "Ver todos los proyectos",
+    "playDemo": "Jugar demo",
+    "demoSoon": "Demo próximamente",
+    "inDevelopment": "En desarrollo"
+  },
+  "sections": {
+    "summary": "Resumen",
+    "skills": "Competencias",
+    "experience": "Experiencia",
+    "education": "Formación",
+    "certifications": "Certificaciones",
+    "selectedWork": "Proyectos destacados",
+    "references": "Referencias disponibles bajo solicitud."
+  },
+  "work": {
+    "title": "Proyectos seleccionados",
+    "subtitle": "Proyectos que desarrollo y entrego — el perfil de desarrollador es el foco principal; demos actualizadas tras cada release.",
+    "stack": "Stack",
+    "status": "Estado"
+  },
+  "status": {
+    "live": "Demo en vivo",
+    "mvp": "MVP — en desarrollo activo",
+    "in_dev": "En desarrollo"
+  },
+  "footer": {
+    "source": "Código",
+    "live": "Sitio"
+  },
+  "certIntro": "La credencial Fullstack Developer es una certificación técnica formal de SENAI/SC; los demás ítems provienen de plataformas de cursos online, salvo indicación contraria."
+}
