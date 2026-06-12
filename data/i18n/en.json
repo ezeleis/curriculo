@@ -9,7 +9,8 @@
     "profile": "Profile",
     "language": "Language",
     "developer": "Developer",
-    "sdr": "SDR / Sales"
+    "sdr": "SDR / Sales",
+    "corretor": "Real Estate Agent"
   },
   "actions": {
     "downloadPdf": "Download PDF",
@@ -31,6 +32,8 @@
   "work": {
     "title": "Selected work",
     "subtitle": "Projects I build and ship — developer profile is the primary focus; demos updated after each release.",
+    "subtitleSdr": "Commercial and CRM-focused work — Fechou CRM and pipeline tooling.",
+    "subtitleCorretor": "Highlighted project for real estate — Fechou CRM (leads, WhatsApp, pipeline).",
     "stack": "Stack",
     "status": "Status"
   },

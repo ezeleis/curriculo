@@ -58,7 +58,7 @@
       "demoUrl": null,
       "status": "in_dev",
       "stack": ["Next.js", "TypeScript", "PostgreSQL", "WhatsApp API", "Meta Ads"],
-      "profiles": ["developer", "sdr"],
+      "profiles": ["developer", "sdr", "corretor"],
       "name": {
         "en": "Fechou CRM",
         "pt-BR": "Fechou CRM",

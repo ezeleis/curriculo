@@ -1,0 +1,176 @@
+{
+  "id": "corretor",
+  "titleLine": {
+    "en": "Real Estate Agent (TTI) | Sales & CRM",
+    "pt-BR": "Corretor de Imóveis (TTI) | Vendas e CRM",
+    "es": "Corredor de Inmuebles (TTI) | Ventas y CRM"
+  },
+  "location": {
+    "en": "Florianópolis, Santa Catarina, Brazil",
+    "pt-BR": "Florianópolis, Santa Catarina, Brasil",
+    "es": "Florianópolis, Santa Catarina, Brasil"
+  },
+  "summary": {
+    "en": "Trilingual sales professional (Portuguese, Spanish, English) with 15+ years across Brazilian, LATAM, and US markets. Recently completed formal training as a Real Estate Transactions Technician (TTI) and am focused on starting my career in residential and commercial real estate in Florianópolis. Combines consultative client communication, pipeline discipline, and digital marketing with hands-on CRM and automation experience — supporting lead capture, follow-up, and conversion in modern agencies.",
+    "pt-BR": "Profissional de vendas trílingue (português, espanhol e inglês) com mais de 15 anos de experiência nos mercados brasileiro, latino-americano e norte-americano. Concluí recentemente a formação de Técnico em Transações Imobiliárias (TTI) e busco iniciar minha trajetória no mercado imobiliário de Florianópolis. Une atendimento consultivo, disciplina de follow-up e marketing digital à experiência prática em CRM e automação — apoiando captação de leads, relacionamento com clientes e conversão em imobiliárias modernas.",
+    "es": "Profesional de ventas trilingüe (portugués, español e inglés) con más de 15 años en mercados brasileño, latinoamericano y estadounidense. Completé recientemente la formación de Técnico en Transacciones Inmobiliarias (TTI) y busco iniciar mi carrera en el mercado inmobiliario de Florianópolis. Combina atención consultiva, follow-up y marketing digital con experiencia práctica en CRM y automatización — apoyando captación de leads, relación con clientes y conversión en inmobiliarias modernas."
+  },
+  "skills": [
+    {
+      "label": { "en": "Real estate & sales", "pt-BR": "Mercado imobiliário e vendas", "es": "Mercado inmobiliario y ventas" },
+      "value": {
+        "en": "TTI-trained; client prospecting, property showings support, consultative communication, objection handling, negotiation support, follow-up cadences",
+        "pt-BR": "Formação TTI; prospecção de clientes, apoio a visitas, comunicação consultiva, tratamento de objeções, apoio à negociação, cadências de follow-up",
+        "es": "Formación TTI; prospección de clientes, apoyo a visitas, comunicación consultiva, manejo de objeciones, apoyo a negociación, cadencias de follow-up"
+      }
+    },
+    {
+      "label": { "en": "CRM & lead management", "pt-BR": "CRM e gestão de leads", "es": "CRM y gestión de leads" },
+      "value": {
+        "en": "Pipeline stages, lead routing, marketing automation, intake workflows, data quality — directly applicable to buyer/seller funnels",
+        "pt-BR": "Estágios de funil, roteamento de leads, automação de marketing, fluxos de intake, qualidade de dados — aplicável a funis de compradores e vendedores",
+        "es": "Etapas de embudo, enrutamiento de leads, automatización de marketing, flujos de intake, calidad de datos — aplicable a embudos de compradores y vendedores"
+      }
+    },
+    {
+      "label": { "en": "Digital marketing", "pt-BR": "Marketing digital", "es": "Marketing digital" },
+      "value": {
+        "en": "Campaign performance analysis, segmentation, messaging, SEO/SERP evaluation, social and WhatsApp-oriented outreach",
+        "pt-BR": "Análise de campanhas, segmentação, mensagens, avaliação SEO/SERP, prospecção orientada a WhatsApp e redes",
+        "es": "Análisis de campañas, segmentación, mensajes, evaluación SEO/SERP, prospección orientada a WhatsApp y redes"
+      }
+    },
+    {
+      "label": { "en": "Tools", "pt-BR": "Ferramentas", "es": "Herramientas" },
+      "value": {
+        "en": "CRM platforms, MS Excel (advanced), Make, n8n, reporting dashboards, WhatsApp business workflows",
+        "pt-BR": "Plataformas CRM, MS Excel (avançado), Make, n8n, dashboards, fluxos comerciais via WhatsApp",
+        "es": "Plataformas CRM, MS Excel (avanzado), Make, n8n, dashboards, flujos comerciales vía WhatsApp"
+      }
+    },
+    {
+      "label": { "en": "Languages", "pt-BR": "Idiomas", "es": "Idiomas" },
+      "value": {
+        "en": "Portuguese (fluent), Spanish (native), English (near-native; ECCE Grade A)",
+        "pt-BR": "Português (fluente), Espanhol (nativo), Inglês (quase nativo; ECCE nota A)",
+        "es": "Portugués (fluido), Español (nativo), Inglés (casi nativo; ECCE grado A)"
+      }
+    }
+  ],
+  "experience": [
+    {
+      "title": { "en": "CRM & Automation Coordinator", "pt-BR": "Coordenador de CRM e Automação", "es": "Coordinador de CRM y Automatización" },
+      "org": { "en": "VKM Law Group · Florianópolis, SC, Brazil", "pt-BR": "VKM Law Group · Florianópolis, SC, Brasil", "es": "VKM Law Group · Florianópolis, SC, Brasil" },
+      "dates": "May 2025 – Present",
+      "bullets": [
+        {
+          "en": "Manage full CRM lifecycle: pipeline stages, automation rules, lead routing, and data integrity from first contact to conversion.",
+          "pt-BR": "Gestão do ciclo completo do CRM: estágios do funil, automações, roteamento de leads e integridade dos dados do primeiro contato à conversão.",
+          "es": "Gestión del ciclo completo del CRM: etapas del embudo, automatizaciones, enrutamiento de leads e integridad de datos desde el primer contacto."
+        },
+        {
+          "en": "Design nurture sequences and reporting dashboards to track campaigns and client intake — skills transferable to property lead funnels.",
+          "pt-BR": "Desenho de sequências de nutrição e dashboards para campanhas e intake de clientes — competências transferíveis ao funil imobiliário.",
+          "es": "Diseño de secuencias de nutrición y dashboards para campañas e intake de clientes — competencias transferibles al embudo inmobiliario."
+        },
+        {
+          "en": "Analyze marketing data to improve targeting, messaging, and follow-up timing.",
+          "pt-BR": "Análise de dados de marketing para melhorar segmentação, mensagens e timing de follow-up.",
+          "es": "Análisis de datos de marketing para mejorar segmentación, mensajes y timing de follow-up."
+        }
+      ]
+    },
+    {
+      "title": { "en": "AI Automation Specialist", "pt-BR": "Especialista em Automação com IA", "es": "Especialista en Automatización con IA" },
+      "org": { "en": "Dell Digital · Remote", "pt-BR": "Dell Digital · Remoto", "es": "Dell Digital · Remoto" },
+      "dates": "Jul 2021 – Present",
+      "bullets": [
+        {
+          "en": "Automate document handling, data extraction, and reporting — reduces manual back-office work in high-volume environments.",
+          "pt-BR": "Automação de documentos, extração de dados e relatórios — reduz trabalho manual de back-office em ambientes de alto volume.",
+          "es": "Automatización de documentos, extracción de datos e informes — reduce trabajo manual de back-office en entornos de alto volumen."
+        },
+        {
+          "en": "Partner with teams to streamline operational bottlenecks affecting client response times.",
+          "pt-BR": "Parceria com equipes para otimizar gargalos que impactam o tempo de resposta ao cliente.",
+          "es": "Colaboración con equipos para optimizar cuellos de botella que impactan el tiempo de respuesta al cliente."
+        }
+      ]
+    },
+    {
+      "title": { "en": "Freelance — CRM & digital integrations", "pt-BR": "Autônomo — CRM e integrações digitais", "es": "Freelance — CRM e integraciones digitales" },
+      "org": { "en": "Self-Employed · Florianópolis, SC, Brazil", "pt-BR": "Autônomo · Florianópolis, SC, Brasil", "es": "Autónomo · Florianópolis, SC, Brasil" },
+      "dates": "Jan 2024 – Present",
+      "bullets": [
+        {
+          "en": "CRM integrations and lead-capture automation for small businesses — bridging commercial needs with practical implementation.",
+          "pt-BR": "Integrações CRM e automação de captação de leads para pequenos negócios — conectando necessidade comercial à implementação prática.",
+          "es": "Integraciones CRM y automatización de captación de leads para pequeños negocios — conectando necesidad comercial con implementación práctica."
+        }
+      ]
+    },
+    {
+      "title": { "en": "Technical Support Representative", "pt-BR": "Representante de Suporte Técnico", "es": "Representante de Soporte Técnico" },
+      "org": { "en": "Teleperformance · Buenos Aires, Argentina", "pt-BR": "Teleperformance · Buenos Aires, Argentina", "es": "Teleperformance · Buenos Aires, Argentina" },
+      "dates": "Jan 2008 – Nov 2009",
+      "bullets": [
+        {
+          "en": "Bilingual (English/Spanish) client support for US customers — consultative communication and objection handling.",
+          "pt-BR": "Suporte bilíngue (inglês/espanhol) para clientes dos EUA — comunicação consultiva e tratamento de objeções.",
+          "es": "Soporte bilingüe (inglés/español) para clientes de EE.UU. — comunicación consultiva y manejo de objeciones."
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": {
+        "en": "Real Estate Transactions Technician (TTI)",
+        "pt-BR": "Técnico em Transações Imobiliárias (TTI)",
+        "es": "Técnico en Transacciones Inmobiliarias (TTI)"
+      },
+      "school": {
+        "en": "Professional real estate training — Brazil (recently completed)",
+        "pt-BR": "Formação profissional imobiliária — Brasil (conclusão recente)",
+        "es": "Formación profesional inmobiliaria — Brasil (conclusión reciente)"
+      },
+      "dates": "2025 – 2026"
+    },
+    {
+      "degree": {
+        "en": "Fullstack Developer — Information Technology (formal technical program)",
+        "pt-BR": "Desenvolvedor Fullstack — Tecnologia da Informação (programa técnico formal)",
+        "es": "Desarrollador Fullstack — Tecnología de la Información (programa técnico formal)"
+      },
+      "school": {
+        "en": "SENAI/SC – Serviço Nacional de Aprendizagem Industrial",
+        "pt-BR": "SENAI/SC – Serviço Nacional de Aprendizagem Industrial",
+        "es": "SENAI/SC – Serviço Nacional de Aprendizagem Industrial"
+      },
+      "dates": "Jan 2023 – Dec 2023"
+    }
+  ],
+  "certifications": [
+    {
+      "name": { "en": "Real Estate Transactions Technician (TTI)", "pt-BR": "Técnico em Transações Imobiliárias (TTI)", "es": "Técnico en Transacciones Inmobiliarias (TTI)" },
+      "issuer": { "en": "Professional training — Brazil", "pt-BR": "Formação profissional — Brasil", "es": "Formación profesional — Brasil" }
+    },
+    {
+      "name": { "en": "ECCE (Certificate of Competency in English), Grade A", "pt-BR": "ECCE (Certificate of Competency in English), nota A", "es": "ECCE (Certificate of Competency in English), grado A" },
+      "issuer": { "en": "CaMLA", "pt-BR": "CaMLA", "es": "CaMLA" }
+    },
+    {
+      "name": { "en": "Fullstack Developer — Information Technology", "pt-BR": "Desenvolvedor Fullstack — Tecnologia da Informação", "es": "Desarrollador Fullstack — Tecnología de la Información" },
+      "issuer": { "en": "SENAI/SC — formal technical certification", "pt-BR": "SENAI/SC — certificação técnica formal", "es": "SENAI/SC — certificación técnica formal" }
+    }
+  ],
+  "certIntro": {
+    "en": "TTI (Real Estate Transactions Technician) reflects formal training for the Brazilian real estate market. SENAI/SC Fullstack is a formal technical certification; ECCE certifies English proficiency.",
+    "pt-BR": "TTI (Técnico em Transações Imobiliárias) reflete formação para o mercado imobiliário brasileiro. Fullstack SENAI/SC é certificação técnica formal; ECCE comprova proficiência em inglês.",
+    "es": "TTI (Técnico en Transacciones Inmobiliarias) refleja formación para el mercado inmobiliario brasileño. Fullstack SENAI/SC es certificación técnica formal; ECCE acredita dominio del inglés."
+  },
+  "contact": {
+    "email": "facundoezequieleis@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/facundo-ezequiel-leis-pou-a7bbab27"
+  }
+}
