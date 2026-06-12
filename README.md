@@ -30,13 +30,14 @@ facundo-leis-resume/
 
 | Switcher | Default | Options |
 |---|---|---|
-| Profile | `developer` | `developer`, `sdr` |
+| Profile | `developer` | `developer`, `sdr`, `corretor` |
 | Language | `en` | `en`, `pt-BR`, `es` |
 
 Preferences persist in `localStorage` and URL query params:
 
 - Dev CV in Portuguese: `/?lang=pt-BR`
 - SDR CV in Spanish: `/?profile=sdr&lang=es`
+- Real estate CV in Portuguese: `/?profile=corretor&lang=pt-BR`
 - Work page: `/work.html` (inherits lang/profile from URL or storage)
 
 ## Local preview
@@ -95,6 +96,7 @@ Example fields:
 
 - **Developer profile:** `data/profiles/developer.json`
 - **SDR profile:** `data/profiles/sdr.json`
+- **Corretor profile:** `data/profiles/corretor.json`
 - **UI labels** (nav, buttons, section headings): `data/i18n/*.json`
 
 Each translatable field uses `{ "en": "...", "pt-BR": "...", "es": "..." }`.

@@ -9,7 +9,8 @@
     "profile": "Perfil",
     "language": "Idioma",
     "developer": "Desarrollador",
-    "sdr": "SDR / Ventas"
+    "sdr": "SDR / Ventas",
+    "corretor": "Corredor / Inmuebles"
   },
   "actions": {
     "downloadPdf": "Descargar PDF",
@@ -31,6 +32,8 @@
   "work": {
     "title": "Proyectos seleccionados",
     "subtitle": "Proyectos que desarrollo y entrego — el perfil de desarrollador es el foco principal; demos actualizadas tras cada release.",
+    "subtitleSdr": "Proyectos orientados a ventas y CRM — Fechou CRM y herramientas de pipeline.",
+    "subtitleCorretor": "Proyecto destacado para inmobiliarias — Fechou CRM (leads, WhatsApp y pipeline).",
     "stack": "Stack",
     "status": "Estado"
   },

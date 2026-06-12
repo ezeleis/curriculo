@@ -9,7 +9,8 @@
     "profile": "Perfil",
     "language": "Idioma",
     "developer": "Desenvolvedor",
-    "sdr": "SDR / Vendas"
+    "sdr": "SDR / Vendas",
+    "corretor": "Corretor / Imóveis"
   },
   "actions": {
     "downloadPdf": "Baixar PDF",
@@ -31,6 +32,8 @@
   "work": {
     "title": "Projetos selecionados",
     "subtitle": "Projetos que desenvolvo e entrego — perfil de desenvolvedor é o foco principal; demos atualizadas após cada release.",
+    "subtitleSdr": "Projetos com foco comercial e CRM — Fechou CRM e ferramentas de pipeline.",
+    "subtitleCorretor": "Projeto em destaque para o mercado imobiliário — CRM Fechou (captação, WhatsApp e pipeline).",
     "stack": "Stack",
     "status": "Status"
   },

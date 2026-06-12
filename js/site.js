@@ -2,7 +2,7 @@
   "use strict";
 
   var LANGS = ["en", "pt-BR", "es"];
-  var PROFILES = ["developer", "sdr"];
+  var PROFILES = ["developer", "sdr", "corretor"];
   var STORAGE_LANG = "fl-lang";
   var STORAGE_PROFILE = "fl-profile";
 
@@ -123,16 +123,17 @@
       '<select id="profileSelect" aria-label="' +
       escapeHtml(t("switcher.profile")) +
       '">' +
-      '<option value="developer"' +
-      (state.profile === "developer" ? " selected" : "") +
-      ">" +
-      escapeHtml(t("switcher.developer")) +
-      "</option>" +
-      '<option value="sdr"' +
-      (state.profile === "sdr" ? " selected" : "") +
-      ">" +
-      escapeHtml(t("switcher.sdr")) +
-      "</option>" +
+      PROFILES.map(function (id) {
+        return (
+          '<option value="' +
+          id +
+          '"' +
+          (state.profile === id ? " selected" : "") +
+          ">" +
+          escapeHtml(t("switcher." + id)) +
+          "</option>"
+        );
+      }).join("") +
       "</select></label>" +
       '<label class="control">' +
       '<span class="control-label">' +
@@ -388,7 +389,7 @@
       '<section aria-labelledby="cert-heading"><h2 id="cert-heading">' +
       escapeHtml(t("sections.certifications")) +
       '</h2><p class="cert-intro">' +
-      escapeHtml(t("certIntro")) +
+      escapeHtml(p.certIntro ? loc(p.certIntro) : t("certIntro")) +
       '</p><div class="table-wrap"><table><thead><tr><th scope="col">' +
       escapeHtml(t("sections.certifications")) +
       '</th><th scope="col">Issuer / notes</th></tr></thead><tbody>' +
@@ -477,7 +478,7 @@
       escapeHtml(t("work.title")) +
       "</h1>" +
       '<p class="work-subtitle">' +
-      escapeHtml(t("work.subtitle")) +
+      escapeHtml(t("work.subtitle" + (state.profile === "corretor" ? "Corretor" : state.profile === "sdr" ? "Sdr" : ""))) +
       "</p></header>" +
       '<div class="project-grid">' +
       cards +
