@@ -38,6 +38,11 @@
       .replace(/"/g, "&quot;");
   }
 
+  function phoneTel(display) {
+    var digits = String(display || "").replace(/\D/g, "");
+    return digits ? "+" + digits : "";
+  }
+
   function readPrefs() {
     var params = new URLSearchParams(window.location.search);
     var lang = params.get("lang");
@@ -389,7 +394,13 @@
           " →</a></p></section>"
         : "";
 
-    var query = "?lang=" + encodeURIComponent(state.lang) + "&profile=" + encodeURIComponent(state.profile);
+    var phoneLine = p.contact.phone
+      ? '<a href="tel:' +
+        escapeHtml(phoneTel(p.contact.phone)) +
+        '">' +
+        escapeHtml(p.contact.phone) +
+        "</a>"
+      : "";
 
     root.innerHTML =
       '<header class="resume-header" id="contact">' +
@@ -399,6 +410,7 @@
       "</p>" +
       '<p class="meta-line">' +
       escapeHtml(loc(p.location)) +
+      (phoneLine ? " · " + phoneLine : "") +
       " · " +
       '<a href="mailto:' +
       escapeHtml(p.contact.email) +

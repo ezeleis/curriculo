@@ -543,7 +543,9 @@ tbody tr:nth-child(even) {
   .site-footer,
   .skip-link,
   #printBtn,
+  #downloadPdfBtn,
   .work-teaser-cta,
+  section[aria-labelledby="work-teaser-heading"],
   .header-controls {
     display: none !important;
   }
@@ -587,19 +589,38 @@ tbody tr:nth-child(even) {
   h2 {
     font-size: 11pt;
     page-break-after: avoid;
+    break-after: avoid-page;
     border-bottom-width: 1pt;
+    display: block;
+    width: 100%;
   }
 
   h3 {
     font-size: 10.5pt;
     page-break-after: avoid;
+    break-after: avoid-page;
+  }
+
+  section {
+    margin-bottom: 0.75rem;
   }
 
   .job {
-    page-break-inside: avoid;
+    page-break-inside: auto;
+    break-inside: auto;
     border-bottom: none;
-    padding-bottom: 0.6rem;
-    margin-bottom: 0.75rem;
+    padding-bottom: 0.35rem;
+    margin-bottom: 0.45rem;
+  }
+
+  .job-head {
+    page-break-after: avoid;
+    break-after: avoid-page;
+  }
+
+  .job:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 
   .skills-grid {
