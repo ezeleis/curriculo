@@ -70,14 +70,17 @@ If enabled, publishes static files from `main` with **no gate**. Use only for a 
 
 ## PDF for applications
 
-- **Latest export:** `Facundo_Leis_Pou_Resume_export.pdf` — the **Download PDF** button saves it as `Facundo_Leis_Pou_Resume_FullStack.pdf`.
-- **Regenerate:** use **Print / Save as PDF** on the developer profile (best ATS layout), or run:
+- **Download PDF** uses the active profile and language, e.g. `exports/Facundo_Leis_Pou_Resume_corretor_pt-BR.pdf`.
+- If that file is not in the repo yet, the button falls back to **Print / Save as PDF** for the current view.
+- **Regenerate exports** (requires Microsoft Edge):
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File .\scripts\export-pdf.ps1
-```
+# one profile + language
+powershell -ExecutionPolicy Bypass -File .\scripts\export-pdf.ps1 -Profile corretor -Lang pt-BR
 
-(requires Microsoft Edge).
+# all profiles and languages
+powershell -ExecutionPolicy Bypass -File .\scripts\export-pdf.ps1 -All
+```
 
 Print CSS hides switchers and navigation chrome.
 

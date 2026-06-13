@@ -82,6 +82,41 @@
     });
   }
 
+  function pdfExportBasename() {
+    return "Facundo_Leis_Pou_Resume_" + state.profile + "_" + state.lang;
+  }
+
+  function pdfExportPath() {
+    return "exports/" + pdfExportBasename() + ".pdf";
+  }
+
+  function pdfDownloadFilename() {
+    return pdfExportBasename() + ".pdf";
+  }
+
+  function handleDownloadPdf(event) {
+    event.preventDefault();
+    var path = pdfExportPath();
+    var filename = pdfDownloadFilename();
+    fetch(path, { method: "HEAD" })
+      .then(function (res) {
+        if (res.ok) {
+          var link = document.createElement("a");
+          link.href = path;
+          link.download = filename;
+          link.rel = "noopener";
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+          return;
+        }
+        window.print();
+      })
+      .catch(function () {
+        window.print();
+      });
+  }
+
   function renderHeader() {
     var header = document.querySelector(".site-header .header-inner");
     if (!header) return;
@@ -158,7 +193,11 @@
       (isWork
         ? ""
         : '<div class="header-actions">' +
-          '<a class="btn btn-ghost" href="Facundo_Leis_Pou_Resume_export.pdf" download="Facundo_Leis_Pou_Resume_FullStack.pdf">' +
+          '<a class="btn btn-ghost" id="downloadPdfBtn" href="' +
+          escapeHtml(pdfExportPath()) +
+          '" download="' +
+          escapeHtml(pdfDownloadFilename()) +
+          '">' +
           escapeHtml(t("actions.downloadPdf")) +
           "</a>" +
           '<button type="button" class="btn btn-primary" id="printBtn">' +
@@ -169,6 +208,7 @@
     var profileSelect = document.getElementById("profileSelect");
     var langSelect = document.getElementById("langSelect");
     var printBtn = document.getElementById("printBtn");
+    var downloadPdfBtn = document.getElementById("downloadPdfBtn");
 
     if (profileSelect) {
       profileSelect.addEventListener("change", function () {
@@ -194,6 +234,10 @@
       printBtn.addEventListener("click", function () {
         window.print();
       });
+    }
+
+    if (downloadPdfBtn) {
+      downloadPdfBtn.addEventListener("click", handleDownloadPdf);
     }
   }
 

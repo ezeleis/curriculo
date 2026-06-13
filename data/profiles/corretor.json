@@ -59,6 +59,28 @@
   ],
   "experience": [
     {
+      "title": { "en": "Administrative Assistant", "pt-BR": "Assistente Administrativo", "es": "Asistente Administrativo" },
+      "org": { "en": "Jessica Pasquinelli Real Estate · Florianópolis, SC, Brazil", "pt-BR": "Imobiliária Jessica Pasquinelli · Florianópolis, SC, Brasil", "es": "Inmobiliaria Jessica Pasquinelli · Florianópolis, SC, Brasil" },
+      "dates": "Jan 2026 – Mar 2026",
+      "bullets": [
+        {
+          "en": "Supported daily agency operations: client intake, documentation, scheduling, and coordination with brokers and property owners.",
+          "pt-BR": "Apoio à operação diária da imobiliária: recepção de clientes, documentação, agendamentos e coordenação com corretores e proprietários.",
+          "es": "Apoyo a la operación diaria de la inmobiliaria: recepción de clientes, documentación, agendamientos y coordinación con corredores y propietarios."
+        },
+        {
+          "en": "Organized property visit schedules and follow-up communication with buyers and sellers via phone and WhatsApp.",
+          "pt-BR": "Organização de visitas a imóveis e follow-up com compradores e vendedores por telefone e WhatsApp.",
+          "es": "Organización de visitas a inmuebles y follow-up con compradores y vendedores por teléfono y WhatsApp."
+        },
+        {
+          "en": "Maintained listing records, contract files, and CRM/client data to keep the sales pipeline accurate and up to date.",
+          "pt-BR": "Manutenção de cadastros de imóveis, arquivos de contratos e dados de CRM/clientes para manter o funil comercial atualizado.",
+          "es": "Mantenimiento de fichas de inmuebles, archivos de contratos y datos de CRM/clientes para mantener el embudo comercial actualizado."
+        }
+      ]
+    },
+    {
       "title": { "en": "CRM & Automation Coordinator", "pt-BR": "Coordenador de CRM e Automação", "es": "Coordinador de CRM y Automatización" },
       "org": { "en": "VKM Law Group · Florianópolis, SC, Brazil", "pt-BR": "VKM Law Group · Florianópolis, SC, Brasil", "es": "VKM Law Group · Florianópolis, SC, Brasil" },
       "dates": "May 2025 – Present",
