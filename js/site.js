@@ -405,6 +405,21 @@
       })
       .join("");
 
+    var trainRows = p.trainings && p.trainings.length > 0
+      ? p.trainings
+          .map(function (t) {
+            var issuerAndDate = escapeHtml(loc(t.issuer)) + (t.date ? " · " + escapeHtml(t.date) : "");
+            return (
+              "<tr><td>" +
+              escapeHtml(loc(t.name)) +
+              "</td><td>" +
+              issuerAndDate +
+              "</td></tr>"
+            );
+          })
+          .join("")
+      : "";
+
     var certRows = p.certifications
       .map(function (c) {
         return (
@@ -497,6 +512,13 @@
       "</h2>" +
       eduHtml +
       "</section>" +
+      (trainRows ? '<section aria-labelledby="train-heading"><h2 id="train-heading">' +
+      escapeHtml(t("sections.trainings")) +
+      '</h2><div class="table-wrap"><table><thead><tr><th scope="col">' +
+      escapeHtml(t("sections.trainings")) +
+      '</th><th scope="col">Issuer / Date</th></tr></thead><tbody>' +
+      trainRows +
+      "</tbody></table></div></section>" : "") +
       '<section aria-labelledby="cert-heading"><h2 id="cert-heading">' +
       escapeHtml(t("sections.certifications")) +
       '</h2><p class="cert-intro">' +

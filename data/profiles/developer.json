@@ -243,12 +243,20 @@
       "dates": "Jan 2023 – Dec 2023"
     }
   ],
+  "trainings": [
+    { "name": { "en": "Python", "pt-BR": "Python", "es": "Python" }, "issuer": { "en": "FIAP", "pt-BR": "FIAP", "es": "FIAP" }, "date": "Apr 2021" },
+    { "name": { "en": "Business Intelligence (BI)", "pt-BR": "Business Intelligence (BI)", "es": "Business Intelligence (BI)" }, "issuer": { "en": "FIAP", "pt-BR": "FIAP", "es": "FIAP" }, "date": "Apr 2021" },
+    { "name": { "en": "Blockchain Advanced", "pt-BR": "Blockchain Avançado", "es": "Blockchain Avanzado" }, "issuer": { "en": "FIAP", "pt-BR": "FIAP", "es": "FIAP" }, "date": "Apr 2021" },
+    { "name": { "en": "Introduction to Python Programming: Learning to Code with Python", "pt-BR": "Introducción a la programación en Python I: Aprendiendo a programar con Python", "es": "Introducción a la programación en Python I: Aprendiendo a programar con Python" }, "issuer": { "en": "Coursera", "pt-BR": "Coursera", "es": "Coursera" }, "date": "Nov 2020" },
+    { "name": { "en": "Project Management: Foundations of Success", "pt-BR": "Gestión de proyectos: las bases del éxito", "es": "Gestión de proyectos: las bases del éxito" }, "issuer": { "en": "Coursera", "pt-BR": "Coursera", "es": "Coursera" }, "date": "Oct 2020" },
+    { "name": { "en": "Learn the Basics of Blockchain with Python", "pt-BR": "Learn the Basics of Blockchain with Python", "es": "Learn the Basics of Blockchain with Python" }, "issuer": { "en": "Codecademy", "pt-BR": "Codecademy", "es": "Codecademy" }, "date": "Jul 2020" },
+    { "name": { "en": "Learn SQL", "pt-BR": "Learn SQL", "es": "Learn SQL" }, "issuer": { "en": "Codecademy", "pt-BR": "Codecademy", "es": "Codecademy" }, "date": "Jun 2020" },
+    { "name": { "en": "HTML", "pt-BR": "HTML", "es": "HTML" }, "issuer": { "en": "Codecademy", "pt-BR": "Codecademy", "es": "Codecademy" }, "date": "Jun 2020" },
+    { "name": { "en": "First Certificate in English", "pt-BR": "First Certificate in English", "es": "First Certificate in English" }, "issuer": { "en": "Cambridge English", "pt-BR": "Cambridge English", "es": "Cambridge English" }, "date": "Dec 2007" }
+  ],
   "certifications": [
     { "name": { "en": "Fullstack Developer — Information Technology", "pt-BR": "Desenvolvedor Fullstack — Tecnologia da Informação", "es": "Desarrollador Fullstack — Tecnología de la Información" }, "issuer": { "en": "SENAI/SC — formal technical certification", "pt-BR": "SENAI/SC — certificação técnica formal", "es": "SENAI/SC — certificación técnica formal" } },
-    { "name": { "en": "ECCE (Certificate of Competency in English), Grade A", "pt-BR": "ECCE (Certificate of Competency in English), nota A", "es": "ECCE (Certificate of Competency in English), grado A" }, "issuer": { "en": "CaMLA", "pt-BR": "CaMLA", "es": "CaMLA" } },
-    { "name": { "en": "Blockchain Advanced", "pt-BR": "Blockchain Avançado", "es": "Blockchain Avanzado" }, "issuer": { "en": "Online learning platform", "pt-BR": "Plataforma de cursos online", "es": "Plataforma de cursos online" } },
-    { "name": { "en": "Learn SQL", "pt-BR": "Learn SQL", "es": "Learn SQL" }, "issuer": { "en": "Online learning platform", "pt-BR": "Plataforma de cursos online", "es": "Plataforma de cursos online" } },
-    { "name": { "en": "Python", "pt-BR": "Python", "es": "Python" }, "issuer": { "en": "Online learning platform", "pt-BR": "Plataforma de cursos online", "es": "Plataforma de cursos online" } }
+    { "name": { "en": "ECCE (Certificate of Competency in English), Grade A", "pt-BR": "ECCE (Certificate of Competency in English), nota A", "es": "ECCE (Certificate of Competency in English), grado A" }, "issuer": { "en": "CaMLA", "pt-BR": "CaMLA", "es": "CaMLA" } }
   ],
   "contact": {
     "email": "facundoezequieleis@gmail.com",

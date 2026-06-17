@@ -172,6 +172,10 @@
       "dates": "Jan 2023 – Dec 2023"
     }
   ],
+  "trainings": [
+    { "name": { "en": "Project Management: Foundations of Success", "pt-BR": "Gestión de proyectos: las bases del éxito", "es": "Gestión de proyectos: las bases del éxito" }, "issuer": { "en": "Coursera", "pt-BR": "Coursera", "es": "Coursera" }, "date": "Oct 2020" },
+    { "name": { "en": "First Certificate in English", "pt-BR": "First Certificate in English", "es": "First Certificate in English" }, "issuer": { "en": "Cambridge English", "pt-BR": "Cambridge English", "es": "Cambridge English" }, "date": "Dec 2007" }
+  ],
   "certifications": [
     {
       "name": { "en": "Real Estate Transactions Technician (TTI)", "pt-BR": "Técnico em Transações Imobiliárias (TTI)", "es": "Técnico en Transacciones Inmobiliarias (TTI)" },

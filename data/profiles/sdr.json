@@ -189,6 +189,11 @@
       "dates": "Jan 2023 – Dec 2023"
     }
   ],
+  "trainings": [
+    { "name": { "en": "Sales Development Representative", "pt-BR": "Representante de Desenvolvimento de Vendas", "es": "Representante de Desarrollo de Ventas" }, "issuer": { "en": "SalesHunter", "pt-BR": "SalesHunter", "es": "SalesHunter" }, "date": "Mar 2023" },
+    { "name": { "en": "Project Management: Foundations of Success", "pt-BR": "Gestión de proyectos: las bases del éxito", "es": "Gestión de proyectos: las bases del éxito" }, "issuer": { "en": "Coursera", "pt-BR": "Coursera", "es": "Coursera" }, "date": "Oct 2020" },
+    { "name": { "en": "First Certificate in English", "pt-BR": "First Certificate in English", "es": "First Certificate in English" }, "issuer": { "en": "Cambridge English", "pt-BR": "Cambridge English", "es": "Cambridge English" }, "date": "Dec 2007" }
+  ],
   "certifications": [
     { "name": { "en": "ECCE (Certificate of Competency in English), Grade A", "pt-BR": "ECCE (Certificate of Competency in English), nota A", "es": "ECCE (Certificate of Competency in English), grado A" }, "issuer": { "en": "CaMLA", "pt-BR": "CaMLA", "es": "CaMLA" } },
     { "name": { "en": "Fullstack Developer — Information Technology", "pt-BR": "Desenvolvedor Fullstack — Tecnologia da Informação", "es": "Desarrollador Fullstack — Tecnología de la Información" }, "issuer": { "en": "SENAI/SC — formal technical certification", "pt-BR": "SENAI/SC — certificação técnica formal", "es": "SENAI/SC — certificación técnica formal" } },
