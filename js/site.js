@@ -12,7 +12,8 @@
     i18n: null,
     profileData: null,
     projects: null,
-    page: "resume"
+    page: "resume",
+    allowedProfiles: null
   };
 
   function t(key) {
@@ -48,7 +49,10 @@
     var lang = params.get("lang");
     var profile = params.get("profile");
 
-    if (lang && LANGS.indexOf(lang) !== -1) {
+    var availableProfiles = getAvailableProfiles();
+    var availableLangs = getAvailableLanguages();
+
+    if (lang && availableLangs.indexOf(lang) !== -1) {
       state.lang = lang;
       try {
         localStorage.setItem(STORAGE_LANG, lang);
@@ -56,11 +60,12 @@
     } else {
       try {
         var storedLang = localStorage.getItem(STORAGE_LANG);
-        if (storedLang && LANGS.indexOf(storedLang) !== -1) state.lang = storedLang;
+        if (storedLang && availableLangs.indexOf(storedLang) !== -1) state.lang = storedLang;
       } catch (e) {}
+      if (availableLangs.indexOf(state.lang) === -1) state.lang = availableLangs[0];
     }
 
-    if (profile && PROFILES.indexOf(profile) !== -1) {
+    if (profile && availableProfiles.indexOf(profile) !== -1) {
       state.profile = profile;
       try {
         localStorage.setItem(STORAGE_PROFILE, profile);
@@ -68,8 +73,9 @@
     } else {
       try {
         var storedProfile = localStorage.getItem(STORAGE_PROFILE);
-        if (storedProfile && PROFILES.indexOf(storedProfile) !== -1) state.profile = storedProfile;
+        if (storedProfile && availableProfiles.indexOf(storedProfile) !== -1) state.profile = storedProfile;
       } catch (e) {}
+      if (availableProfiles.indexOf(state.profile) === -1) state.profile = availableProfiles[0];
     }
   }
 
@@ -84,6 +90,48 @@
     return fetch(path).then(function (res) {
       if (!res.ok) throw new Error("Failed to load " + path);
       return res.json();
+    });
+  }
+
+  function fetchAllowedProfiles() {
+    return fetch("/api/profile-access")
+      .then(function (res) {
+        if (!res.ok) {
+          console.warn("Profile access check failed:", res.status);
+          return null;
+        }
+        return res.json();
+      })
+      .then(function (data) {
+        if (!data || !data.ok) {
+          console.warn("Profile access response not ok:", data);
+          return null;
+        }
+        console.log("Allowed profiles:", data.profiles);
+        return data.profiles;
+      })
+      .catch(function (err) {
+        console.warn("Profile access fetch error:", err.message);
+        return null;
+      });
+  }
+
+  function isProfileAllowed(profile) {
+    if (state.allowedProfiles === null) return true;
+    return state.allowedProfiles.indexOf(profile) !== -1;
+  }
+
+  function getAvailableProfiles() {
+    if (state.allowedProfiles === null) return PROFILES;
+    return PROFILES.filter(function (p) {
+      return state.allowedProfiles.indexOf(p) !== -1;
+    });
+  }
+
+  function getAvailableLanguages() {
+    if (state.allowedProfiles === null) return LANGS;
+    return LANGS.filter(function (l) {
+      return state.allowedProfiles.indexOf(l) !== -1;
     });
   }
 
@@ -129,6 +177,34 @@
     var isWork = state.page === "work";
     var query = "?lang=" + encodeURIComponent(state.lang) + "&profile=" + encodeURIComponent(state.profile);
 
+    var availableProfiles = getAvailableProfiles();
+    var availableLangs = getAvailableLanguages();
+
+    var profileOptions = availableProfiles.map(function (id) {
+      return (
+        '<option value="' +
+        id +
+        '"' +
+        (state.profile === id ? " selected" : "") +
+        ">" +
+        escapeHtml(t("switcher." + id)) +
+        "</option>"
+      );
+    }).join("");
+
+    var langOptions = availableLangs.map(function (l) {
+      var label = l === "pt-BR" ? "PT-BR" : l.toUpperCase();
+      return (
+        '<option value="' +
+        l +
+        '"' +
+        (state.lang === l ? " selected" : "") +
+        ">" +
+        label +
+        "</option>"
+      );
+    }).join("");
+
     header.innerHTML =
       '<div class="header-brand">' +
       '<p class="eyebrow">' +
@@ -156,45 +232,24 @@
       "</a>" +
       "</nav></div>" +
       '<div class="header-controls">' +
-      '<label class="control">' +
+      (availableProfiles.length > 1 ? '<label class="control">' +
       '<span class="control-label">' +
       escapeHtml(t("switcher.profile")) +
       "</span>" +
       '<select id="profileSelect" aria-label="' +
       escapeHtml(t("switcher.profile")) +
       '">' +
-      PROFILES.map(function (id) {
-        return (
-          '<option value="' +
-          id +
-          '"' +
-          (state.profile === id ? " selected" : "") +
-          ">" +
-          escapeHtml(t("switcher." + id)) +
-          "</option>"
-        );
-      }).join("") +
-      "</select></label>" +
-      '<label class="control">' +
+      profileOptions +
+      "</select></label>" : "") +
+      (availableLangs.length > 1 ? '<label class="control">' +
       '<span class="control-label">' +
       escapeHtml(t("switcher.language")) +
       "</span>" +
       '<select id="langSelect" aria-label="' +
       escapeHtml(t("switcher.language")) +
       '">' +
-      LANGS.map(function (l) {
-        var label = l === "pt-BR" ? "PT-BR" : l.toUpperCase();
-        return (
-          '<option value="' +
-          l +
-          '"' +
-          (state.lang === l ? " selected" : "") +
-          ">" +
-          label +
-          "</option>"
-        );
-      }).join("") +
-      "</select></label>" +
+      langOptions +
+      "</select></label>" : "") +
       (isWork
         ? ""
         : '<div class="header-actions">' +
@@ -545,40 +600,44 @@
 
   function init() {
     state.page = document.body.dataset.page || "resume";
-    readPrefs();
-    document.documentElement.lang = state.lang === "pt-BR" ? "pt-BR" : state.lang;
 
-    var loads = [
-      fetchJson("data/i18n/" + state.lang + ".json").then(function (data) {
-        state.i18n = data;
-      }),
-      fetchJson("data/profiles/" + state.profile + ".json").then(function (data) {
-        state.profileData = data;
-      }),
-      fetchJson("data/projects.json").then(function (data) {
-        state.projects = data;
-      })
-    ];
+    fetchAllowedProfiles().then(function (profiles) {
+      state.allowedProfiles = profiles;
+      readPrefs();
+      document.documentElement.lang = state.lang === "pt-BR" ? "pt-BR" : state.lang;
 
-    Promise.all(loads)
-      .then(function () {
-        syncUrl();
-        renderHeader();
-        if (state.page === "work") {
-          renderWorkPage();
-        } else {
-          renderResumePage();
-        }
-        renderFooter();
-      })
-      .catch(function (err) {
-        console.error(err);
-        var root = document.getElementById("cv-root") || document.getElementById("work-root");
-        if (root) {
-          root.innerHTML =
-            '<p class="error-msg">Could not load site data. Serve this folder over HTTP (e.g. <code>npx serve .</code>) rather than opening files directly.</p>';
-        }
-      });
+      var loads = [
+        fetchJson("data/i18n/" + state.lang + ".json").then(function (data) {
+          state.i18n = data;
+        }),
+        fetchJson("data/profiles/" + state.profile + ".json").then(function (data) {
+          state.profileData = data;
+        }),
+        fetchJson("data/projects.json").then(function (data) {
+          state.projects = data;
+        })
+      ];
+
+      Promise.all(loads)
+        .then(function () {
+          syncUrl();
+          renderHeader();
+          if (state.page === "work") {
+            renderWorkPage();
+          } else {
+            renderResumePage();
+          }
+          renderFooter();
+        })
+        .catch(function (err) {
+          console.error(err);
+          var root = document.getElementById("cv-root") || document.getElementById("work-root");
+          if (root) {
+            root.innerHTML =
+              '<p class="error-msg">Could not load site data. Serve this folder over HTTP (e.g. <code>npx serve .</code>) rather than opening files directly.</p>';
+          }
+        });
+    });
   }
 
   if (document.readyState === "loading") {
