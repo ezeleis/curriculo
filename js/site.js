@@ -333,12 +333,7 @@
   function renderFooter() {
     var footer = document.querySelector(".site-footer .container");
     if (!footer) return;
-    footer.innerHTML =
-      "<p>" +
-      escapeHtml(t("footer.source")) +
-      ': <a href="https://github.com/ezeleis/curriculo" rel="noopener noreferrer">github.com/ezeleis/curriculo</a> · ' +
-      escapeHtml(t("footer.live")) +
-      ': <a href="https://ezeleis.github.io/curriculo/" rel="noopener noreferrer">ezeleis.github.io/curriculo</a></p>';
+    footer.innerHTML = "";
   }
 
   function renderResumePage() {
